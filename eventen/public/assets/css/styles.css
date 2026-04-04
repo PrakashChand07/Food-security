@@ -1,0 +1,1361 @@
+/*------------------------------------------------------------------
+* Project:        Eventen - Event Conference HTML Templates
+* Author:         HtmlDesign Templates
+* URL:            https://themeforest.net/user/htmldesigntemplates/portfolio
+* Created:        06/26/2024
+-------------------------------------------------------------------*/
+
+:root {
+  --color-primary: #013A54;   /* Dark Teal */
+  --color-secondary: #5AA785; /* Aqua Green */
+  --color-accent: #54C6A5;    /* Mint Green */
+  --color-highlight: #54D6A5; /* Light Green */
+  --color-warning: #FFED56;   /* Yellow */
+  --color-text: #ffffff;      /* White text */
+  --color-background: #f4f4f4; /* Light background */
+}
+
+
+/**Header content CSS**/
+.main_header_area{
+  z-index: 999;
+}
+
+.header-content{
+  background-color: #f7f7f721 ;
+}
+
+.social-links i{
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  transition:all 0.3s ease-in-out;
+}
+
+.social-links i:hover{
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color:var(--color-text);
+  transition:all 0.3s ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  .header-content, nav.navbar.navbar-expand-lg.py-2.navbar-sticky-in {
+    display: none;
+  }
+}
+
+
+/**Header menu CSS**/
+
+.dropdown-menu{
+  left: 0;
+  transition:all 0.3s ease-in-out;
+}
+
+
+.dropdown-menu li:hover  a{
+  background-color: var(--color-accent) ;
+  color: var(--color-text) !important;
+  transition: none;
+}
+
+.dropdown-menu li:first-child:hover a{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.dropdown-menu li:last-child:hover a{
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.fixed-top {
+  background-color: #1c1d66;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu{
+    display: block;
+    opacity: 0;
+    visibility:hidden;
+  }
+
+  .dropdown:hover>.dropdown-menu {
+    opacity: 1 ;
+    visibility: visible;
+    transition:all .3s ease-in-out;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+
+  .nav-item a{
+    text-transform:uppercase;
+  }
+   
+  .dropdown-menu a{
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 1100px){
+  .menu-search, .dropdown-toggle::after {
+    display: none;
+  }
+
+  .slicknav_btn.slicknav_open:before, .slicknav_btn.slicknav_collapsed:before{
+    top: -40px;
+  }
+
+  .slicknav_nav{
+    border-radius: 20px;
+    top: 100px;
+    box-shadow: 0 0 15px #cccccc50;
+    background-color: #f9f9f9;
+  }
+
+  .slicknav_nav a{
+    text-transform:capitalize;
+    font-size: 16px;
+    color: #777 !important;
+  } 
+
+  .navbar-brand img{
+    width: 300% !important;
+  } 
+
+  .slicknav_nav a:hover, .slicknav_nav .slicknav_row:hover{
+    background-color: var(--color-accent);
+  }
+
+  .nav-link{
+    padding: 12px 36px !important;
+    margin: 0 !important;
+  }
+
+  .dropdown-menu>li>a{
+    padding: 12px 45px !important;
+    font-size: 15px;
+    color: #777 !important;
+    background-color: #f9f9f9;
+    border-radius: 0;  
+  
+  }
+  .nav-link:focus{
+  /* color: var(--color-text) !important; */
+  }
+ 
+  a.nav-link.dropdown-toggle:focus{
+  /* color: var(--color-text) !important; */
+  background-color: var(--color-accent);
+  }
+
+  .dropdown-menu li:first-child:hover  a, .dropdown-menu li,   .dropdown-menu li:last-child:hover  a{
+    border-radius: 0 ;
+  }
+  
+  ul.dropdown-menu{
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .navbar li{
+    border-top: 1px solid #B6B3C470;
+  }
+
+  .dropdown-menu li{
+    border-color: #B6B3C470;
+  }
+
+  li.nav-item.dropdown.slicknav_parent.slicknav_open > a > a {
+  background: var(--color-accent);
+  /* color : var(--color-text) !important; */
+  }
+
+  li.nav-item.dropdown.slicknav_parent.slicknav_open > a span i {
+  color: var(--color-text) !important;
+  } 
+
+ .slicknav_btn.slicknav_open:before:hover{
+  color: var(--color-accent);
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar-brand img{
+      width: 100% !important;
+  } 
+
+  .slicknav_btn.slicknav_open:before, .slicknav_btn.slicknav_collapsed:before{
+    left: 180px;
+  }  
+}
+
+@media (max-width: 576px){
+  .navbar-brand img{
+    width: 40% !important;
+    align-items: start;
+  } 
+
+  .slicknav_btn.slicknav_open:before, .slicknav_btn.slicknav_collapsed:before{
+    top: -30px;
+    left: -20px;
+  }
+  .slicknav_nav{
+    top: 80px;
+  }
+           
+}
+
+  
+#search1{
+  background-color: rgba(0, 0, 0, .87);
+}
+
+#search1 .form-control::placeholder{
+  color: var(--color-text);
+}
+
+#search1 .close{
+  background-color: transparent;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  transition:all 0.3s ease-in-out;
+}
+
+#search1 .close:hover{
+  border-color: transparent;
+  transition:all 0.3s ease-in-out;
+}
+
+#search1 .btn{
+  background: none;
+  top:41%;
+  left: 45%;
+  font-size: 14px;
+}
+
+.btn-theme-action{
+  transition: background-color 0.25s ease, color 0.25s ease, font-weight 0.25s ease;
+  border: 1px solid transparent;
+}
+.btn-theme-action span, .btn-theme-action {
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+.btn-theme-action:hover, .btn-theme-action:focus{
+  background-color: #0a4414; 
+  color: #ffffff !important;
+  border-color: rgba(0,0,0,0.06);
+}
+.btn-theme-action:hover span, .btn-theme-action:focus span{
+  font-weight: 700; 
+  color: #6aef48 !important; 
+}
+
+.holographic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  color: #eff2ee;
+  background-color: #13812a;
+  /* background: transparent; */
+  border: 2px solid rgba(18, 43, 11, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.holographic-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* background: linear-gradient(
+    0deg,
+    transparent,
+    rgba(98, 227, 66, 0.15),
+    transparent
+  ); */
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.holographic-btn:hover {
+  transform: scale(1.05);
+  background-color: #f3f4f5;
+  color: #0d2009 !important;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 20px rgba(29, 68, 19, 0.3);
+}
+
+.holographic-btn:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.holographic-btn span,
+.holographic-btn i {
+  position: relative;
+  z-index: 2;
+  transition: color 0.25s ease, font-weight 0.25s ease;
+}
+
+.holographic-btn:hover span {
+  font-weight: 700;
+  color: #13280c !important;
+}
+
+
+/*Banner CSS*/
+.banner{
+  background-image: url(../images/background/d.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0% -110%;
+}
+
+.inner-banner{ padding-top: 150px;}
+
+
+.countdown-inner span{
+  color: #3b9525; /* semi-transparent accent (approx) */
+}
+
+.banner-image{
+  /* background-image: url(../images/pattern/3.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+ background-position: center ;
+}
+.banner-button .btn {
+  background-color: green;   /* green background */
+  color: white;              /* white text */
+  font-weight: normal;       /* normal by default */
+  border: 2px solid green;   /* keep border for hover effect */
+  transition: all 0.3s ease; /* smooth effect */
+}
+
+.banner-button .btn:hover {
+  background-color: transparent; /* transparent background */
+  color: green;                  /* green text */
+  font-weight: bold;             /* bold text */
+}
+
+.wave{
+  left: 0;
+  line-height: 0;
+  bottom: -1px;
+}
+
+.wave .elementor-shape-fill{
+  fill: #495057c4;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+.wave svg{
+  width: calc(100% + 1.3px);
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+@media (max-width: 1100px){
+  .inner-banner{
+  padding-top: 50px;
+ }
+
+  .banner-left{
+  padding-bottom: 100px;
+ }
+ 
+ .countdown-inner{
+  padding: 20px !important;
+ }
+
+}
+
+@media (max-width: 576px){
+  .banner-event-info li{
+    border: none !important;
+  }
+
+  .inner-banner{
+    padding-top: 20px;
+  }
+}
+
+/*Overview CSS*/
+.event-info-icon i{
+  width:60px;
+  height:60px;
+  line-height:60px;
+  font-size: 30px;
+  transition: all .4s ease-in-out;
+}
+
+.overview-event-info a:hover i{
+  /* background-color: var(--color-primary); */
+  transition: all .5s ease-in-out;
+}
+
+
+@media (max-width: 1100px){
+  .event-info-icon i{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px){
+  .event-info-icon i{
+    width:60px;
+    height:60px;
+    line-height:60px;
+    font-size: 30px;
+  }
+
+  .overview-event-info{
+    position: relative !important;
+  }
+
+}
+
+/**Partners CSS*/
+.partner-img-box img:hover{
+  opacity: 1 !important;
+}
+
+@media (max-width: 576px){
+  .partner-img-box{
+    border-bottom: 1px solid #00000014 !important; 
+  }
+  .border-sm-0 {
+    border: 0 !important;
+}
+}
+
+/*Feature CSS*/
+.feature{
+  /* background-image: url(../images/background/5.jpg); */
+  background-size:auto;
+  background-position: top center;
+}
+
+
+/* Banner: hide legacy overlay and use video background */
+.banner-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* above video, behind text */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),  /* brighter transparent white */
+    rgba(255, 255, 255, 0.2)   /* lighter white */
+  );
+  pointer-events: none;
+}
+
+/* Dark translucent layer placed above the video and below content to improve text contrast */
+.banner .video-dark{
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  /* background: rgba(220, 242, 232,0.35);  */
+  z-index: 1; /* sits above video (z-index:0) and below content (z-index:2) */
+  pointer-events: none; /* allow clicks through to controls/links if any */
+}
+
+/* Ensure banner content sits above the video */
+.banner .container, .banner .inner-banner{ position: relative; z-index: 2; }
+
+.feature-box i{
+  width:70px;
+  height:70px;
+  line-height:42px;
+  font-size: 35px;
+  transition: all .5s ease-in-out;
+}
+
+.feature-lists a:hover i{
+  background-color: var(--color-primary);
+  transition: all .5s ease-in-out;
+}
+
+@media (max-width: 576px){
+ .counter-box {
+  border-bottom: 1px solid rgba(255,255,255,0.15)  ;
+  border-width: 0px 0px 1px 0px !important; 
+  }
+
+  .inner-counter{
+    margin-bottom: 20px !important;
+  }
+}
+
+
+/*Speakers CSS*/
+.box-content,.speaker-box:after{
+  width:100%;
+  position:absolute;
+  left:0;
+  border-radius:25px; 
+  transition: all ease-in-out .5s;
+}
+
+.speaker-box:after{
+  content:"";
+  height:100%; 
+  color: #fff;
+}
+  
+.speaker-box .social-link li a{
+  width:30px;
+  height:30px;
+  line-height:30px;
+  background-color: #cfe6ca;
+  transition:all .3s ease-in-out
+}
+
+.speaker-box:hover:after{
+  background:rgba(0,0,0,.4); 
+  border-radius:25px; 
+  transition: all ease-in-out .5s;
+}
+
+.box-content {
+  transform: translateY(100%); 
+  transition: transform .5s ease-out; 
+}
+
+.speaker-box:hover .box-content {
+  transform: translateY(-20px);
+}
+
+@keyframes iconTranslateY {
+  48% {
+      -webkit-transform: translateY(50%);
+      transform: translateY(50%)
+  }
+
+  49% {
+      opacity: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%)
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.social-link>li>a:hover>i {
+  -webkit-animation: iconTranslateY .4s forwards; 
+  animation: iconTranslateY .4s forwards; 
+}
+
+.speaker-box .social-link li a:hover{
+  background:#13812a;
+  color:white;
+}
+
+.speaker-box .social-link li:last-child a:hover{background:#E60023;}
+
+.speaker-box .social-link li:first-child a:hover{background:#1877F2;}
+
+/*Ticket CSS*/
+.ticket, .next-sponser{
+  background-image: url(../images/background/banner.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.ticket .overlay, .next-sponser .overlay{
+  background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+/*Schedules*/
+.schedules {
+   /* full black */
+  background-image: none;    /* remove gradient if present */
+}
+
+
+.schedule-day::after{
+  position: absolute;
+  font-family: "FontAwesome";
+  font-size: 100px;
+  color: #70707021;
+  content: "\f073";
+  top: -30%;
+  left: -5%;
+  z-index: -1;
+}
+
+.schedules img{
+  height: 50px;
+  width: 50px;
+}
+
+/* .schedule-box-title h5:hover, .speaker-box a:hover h6{
+  color: var(--color-accent) !important;
+  transition:all 0.3s ease-in-out;
+} */
+
+.schedule-bio-info p a:hover {
+  color: var(--color-primary);
+  transition:all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 576px){
+  .schedule-day::after{
+    left: 36%;
+  }
+
+  .schedule-title{
+    margin-bottom: 75px !important;
+  }
+
+  .schedule-list{
+    margin-bottom: 40px;
+  }
+
+  .schedules{
+    padding-bottom: 60px;
+  }
+}
+
+
+/* Pricing */
+.pattern {
+  top: -11px;
+  left: 0;
+}
+
+.currency, .cents{
+  font-size: 21px;
+}
+
+.dollor{
+  font-size: 70px;
+  line-height: .8;
+}
+
+@media (max-width: 1100px){
+  .currency, .cents {
+    font-size: 16px;
+  }
+
+  .dollor{
+    font-size: 54px;
+  }
+
+  .pattern {
+    top: -9px;
+  }
+}
+
+@media (max-width: 990px){
+  .pattern {
+    top: -10px;
+  }
+}
+
+
+@media (max-width: 576px){
+  .currency, .cents {
+    font-size: 12px;
+  }
+
+  .dollor{
+    font-size: 42px;
+  }
+
+  .ticket-box-inner{
+    margin-bottom: 30px;
+  }
+
+  .price-options{
+    padding-bottom: 0 !important;
+  }
+
+  .pattern {
+    top: -11px;
+  }
+}
+
+  
+/* Gallery */
+
+.gallery {
+  background-image: url(../images/background/6.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.lightgallery a:hover::after{
+  background:rgba(0,0,0,0.5); 
+}
+
+
+.lg-toolbar .lg-close:after, .lg-toolbar .lg-download:after, .lg-outer .lg-toggle-thumb:after, .lg-next:before, .lg-prev:after{
+  content: "\f00d" !important;
+  font-family: "FontAwesome";
+  font-size: 25px;
+}
+
+.lg-toolbar .lg-download:after{
+  content: "\f063" !important;
+}
+
+.lg-outer .lg-toggle-thumb:after{
+  content: "\f00e" !important;
+}
+
+.lg-next:before{
+  content: "\f061" !important;
+}
+
+.lg-prev:after{
+  content: "\f060" !important;
+}
+
+.grid-item {
+  width: 33%;
+}
+
+@media (max-width: 576px){
+  .grid-item {
+    width: 100%;
+  }
+}
+
+/*Testimonial*/
+
+.bio-img{
+  height: 70px;
+  width: 70px;
+}
+
+.testimonial-content i{
+  color: #13812a;
+  font-size: 70px;
+  top:-30px;
+}
+
+.testimonial{
+  background-image: url(../images/background/4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* FAQ */
+.faq{
+  /* background-image: url(../images/background/5.jpg); */
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.accordion-button, .accordion-body{
+  font-size: 16px;
+  color: #707070;
+}
+
+
+.accordion-button:not(.collapsed), .accordion-button::after {
+  color: var(--color-accent);
+  background-color: var(--color-background);
+  box-shadow: none;
+}
+
+.accordion-faq>.accordion-item{
+  border: 0;
+}
+
+.accordion-button:focus{
+box-shadow: none;
+}
+
+
+.accordion-button:not(.collapsed)::after{
+  background-image: none;
+  font-family: "FontAwesome";
+  font-size: 16px;
+  color: var(--color-accent);
+  content: "\f068";
+}
+
+.accordion-button::after{
+  background-image: none;
+  font-family: "FontAwesome";
+  color: #707070;
+  content: "\f067";
+  transition: none;
+}
+
+
+
+@media (max-width: 1100px){
+  .accordion-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px){
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+
+/* Subscribe */
+/* .subscribe{
+  background-image: linear-gradient(90deg,var(--color-primary) 0%, var(--color-secondary) 95%);
+} */
+
+/* footer */
+
+footer{
+  /* background-image: url(../images/background/5.jpg); */
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: top center;
+}
+
+.footer-socials a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  transition: all .5s ease-in-out;
+}
+
+.footer-socials a:hover {
+  background-color: var(--color-accent) !important;
+  color: var(--color-text);
+  opacity: 100%;
+  transition: all .3s ease-in-out;
+}
+/* ========================================= */
+/*          About Us page CSS                */
+/* ========================================= */
+
+/* conference css */
+.conference {
+  background-image: url(../images/background/4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.conference-left{
+  background-image: url(../images/pattern/3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.conference .benifit-list-box:hover h5 {
+  color: var(--color-accent);
+  transition:all 0.3s ease-in-out;
+}
+
+.conference .benifit-list-box:hover a {
+  color: var(--color-primary);
+}
+
+.list-box-icon i{
+  font-size: 40px;
+}
+
+/* ========================================= */
+/*          Speaker Detail page CSS          */
+/* ========================================= */
+
+/* speaker detail section */
+.progress-bar{
+   font-size: 14px;
+}
+
+.speaker-img img{
+  height: 100px;
+  width: 100px;
+}
+
+.speaker-socials a i{
+  transition: all .4s ease-in-out;
+}
+
+
+.speaker-socials a:hover i {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.contact-icon i{
+  font-size: 24px;
+}
+
+ 
+/* Event History section */
+@media (max-width: 1100px){
+  .event-list-box{
+    padding: 20px !important;
+  }
+}
+
+/* ========================================= */
+/*            /Event-List Page CSS/          */
+/* ========================================= */
+
+/* Schedule-2 */
+
+.schedule-2{
+  background-image: linear-gradient(90deg,#F7F7F7 50%, var(--color-background)  50%)
+}
+
+.schedule-2 .schedule-icon i{
+  font-size: 100px;
+}
+
+
+@media (min-width: 576px) and (max-width: 990px){
+  .schedule-day1::after {
+    left: 44%;
+  }
+}
+
+/* ========================================= */
+/*          /Event-Detail Page CSS/           */
+/* ========================================= */
+
+ /* /Event-Detail section CSS/ */ 
+
+.qoutation i{
+  font-size: 30px;
+  transition: all .4s ease-in-out;
+}
+
+.qoutation i:hover, .organizer-bio-info p:hover{
+  color: var(--color-accent) !important;
+  background-color: var(--color-background);
+  transition: all .4s ease-in-out;
+}
+
+.sperator {
+  height: 1px;
+}
+
+.organizers-box img{
+  width: 50px;
+  height: 50px;
+}
+
+.info-icon i{
+  font-size: 24px;
+  transition: all .3s ease-in-out;
+}
+
+.info-icon i:hover {
+  color: var(--color-primary);
+  transition: all .3s ease-in-out;
+}
+
+.contact-us-outer
+{
+  background-image: url(../images/background/3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  z-index: 0;
+}
+
+.contact-us-outer .overlay {
+  background-image: linear-gradient(180deg,var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: 25px;
+}
+
+/* ========================================= */
+/*            /Pricing Page CSS/             */
+/* ========================================= */
+
+.ticket2 {
+  background-image: url(../images/background/6.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.ticket-right{
+  background-image: url(../images/pattern/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+ background-position: center ;
+}
+
+
+/* ========================================= */
+/*              /Faq Page CSS/               */
+/* ========================================= */
+
+/* faq general css */
+
+.general-ques-image{
+  background-image: url(../images/pattern/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+ background-position: center ;
+}
+
+/* ========================================= */
+/*         /Product-list Page CSS/           */
+/* ========================================= */
+
+/* Product List Section */
+.sale{
+top: 30px;
+right: -25px;
+}
+
+.recent-product-box img {
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+}
+
+.social-media-links i{
+  font-size: 18px;
+}
+
+
+.image-overlay, .image-overlay1{
+  background-color: rgba(0,0,0,.7);
+  background-blend-mode: overlay;
+  /* background-size:auto; */
+  position: absolute;
+  height: 100%;
+  width: 94%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition:all 0.5s ease-in-out;
+}
+
+.item:hover .image-overlay {
+  opacity: .5;
+}
+
+.recent-product a:hover .product-detail h6{
+  color: var(--color-accent) !important;
+  transition:all 0.5s ease-in-out; 
+}
+
+@media (max-width: 996px){
+  .image-overlay {
+    width: 97%;
+  }
+}
+
+
+/* ========================================= */
+/*         /Book-Now Page CSS/               */
+/* ========================================= */
+
+/* ticket-booking section*/
+.ticket-booking {
+  background-image: url(../images/background/4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* ========================================= */
+/*         /product single Page CSS/         */
+/* ========================================= */
+
+/* Main product section css */
+.price input {
+  width: 54px;
+}
+
+.product-img-nav img{
+  width: 115px;
+  height: 115px;
+}
+
+.product-img-nav img:hover, .slick-current img{
+  opacity: 1 !important;
+}
+
+.product-img-nav.slick-slide.slick-current.slick-center, .product-img-nav.slick-slide{
+  width: 115px !important;
+}
+
+.slick-track{
+  display: flex;
+  justify-content: center;
+}
+
+.slick-list.draggable{
+  padding: 0 !important;
+}
+
+@media (max-width: 576px) {
+  .product-img-nav img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Releated produdct section css */
+
+.related-product .sale{
+  background-color: #b3af54;
+  top: 10px;
+  right: -35px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border-bottom: 0 !important;
+  color: var(--color-accent);
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+  color: black !important;
+}
+
+.related-product-info .nav-link{
+  color: #707070;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+/* ========================================= */
+/*           /Error Page CSS/                */
+/* ========================================= */
+
+/* error section */
+.error{
+  background-image: url(../images/background/6.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.error .overlay {
+  background-image: url(../images/pattern/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center ;
+  top: 0;
+  left: 0;
+  opacity: .1;
+}
+
+.inner-error h1 {
+  font-size: 70px;
+  -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.line-icon {
+  font-size: 20px;
+}
+
+
+.line-icon::before,
+.line-icon::after {      
+  width: 15%;
+  height: 1px;
+  border-top: 3px solid #e8e8e8; 
+  display: inline-block;
+  content: '';
+  padding-top: 0.2em; 
+  margin-left: 1%; 
+  margin-right: 1%;
+}
+
+/* ========================================= */
+/*       /search Result Page CSS/     */
+/* ========================================= */
+
+/* Search Result Section css */
+.blog-info a small:hover {
+  color: var(--color-primary);
+  transition: all .5s ease-in-out;
+}
+
+
+/* ========================================= */
+/*         /coming soon Page CSS/            */
+/* ========================================= */
+
+/* coming-soon secton css */
+
+.coming-soon{
+  background-image: url(../images/background/banner.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow: visible;
+}
+
+.divider-pattern {
+  background: repeating-linear-gradient(-55deg, var(--color-background), var(--color-background) 1px, transparent 1px, transparent 6px);
+}
+
+.coming-soon span{
+  font-size: 70px;
+}
+
+.coming-soon .overlay{
+  background-image: linear-gradient(90deg,var(--color-primary) 0%, var(--color-secondary) 100%);
+  top: 0;
+  left: 0;
+  opacity: .7;
+}
+
+.coming-countdown .countdown-inner span,
+.coming-countdown .countdown-inner p{
+  color:var(--color-text)!important;
+}
+
+@media (max-width: 992px){
+  .coming-soon span {
+    font-size: 54px;
+  }
+  .coming-soon p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) and (max-width:996px){
+  .coming-soon{
+    height: 150vh !important;
+  }
+}
+
+@media (max-width: 576px){
+  .coming-soon span {
+    font-size: 42px;
+  }
+}
+
+
+/* ========================================= */
+/*       /News list (Archives) Page CSS/     */
+/* ========================================= */
+
+/* News list secton css */
+
+.organizer-image img {
+  width: 80px;
+  height: 80px;
+}
+
+
+.organizer-socials a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  transition: all .5s ease-in-out;
+}
+
+.organizer-socials a:hover {
+  background-color: var(--color-accent);
+  opacity: 100%;
+  transition: all .3s ease-in-out;
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+
+.recent-post-list img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* ========================================= */
+/*       /News Single  Page CSS/             */
+/* ========================================= */
+
+
+.qoutation img {
+  width: 80px;
+  height: 80px;
+}
+
+.navigation i {
+  font-size: 20px;
+}
+
+.navigation a:hover h6 {
+  color: var(--color-accent);
+  transition: all .3s ease-in-out;
+} 
+
+
+/* ========================================= */
+/*         /Contact us Page CSS/             */
+/* ========================================= */
+
+/* contact secton css */
+
+.contact {
+  background-image: url(../images/background/4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+@media (min-width: 576px) and (max-width: 1100px){
+  .contact-event-info {
+    padding: 25px !important;
+  }
+}
+
+
+.award-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.award-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}

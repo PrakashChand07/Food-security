@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0f172a; /* dark bg */
+}
+
+/* small helpers */
+.body-bg{ background: linear-gradient(180deg,#0f172a 0%, #071026 100%);} 
+
+/* example utility extension */
+.card-shadow{ box-shadow: 0 6px 18px rgba(2,6,23,0.6); }
+
+/* responsive table tweak */
+.table-fixed-header thead th{ position: sticky; top:0; background: white; z-index:10 }

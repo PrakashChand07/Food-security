@@ -1,0 +1,145 @@
+/* Light theme overrides for Eventen */
+:root {
+  --color-primary: #013A54;   /* original dark teal for accents */
+  --color-secondary: #5AA785;
+  --color-accent: #13812a;
+  --color-highlight: #54D6A5;
+  --color-warning: #FFED56;
+  --color-text: #223645;      /* dark text */
+  --color-background: #ffffff;/* white background */
+}
+/* 
+html, body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text) !important;
+} */
+
+/* Links */
+/* a { color: var(--color-accent) !important; } */
+a:hover { color: white !important; }
+
+/* Header / navbar */
+.main_header_area, .header-content, nav.navbar, .fixed-top {
+  background-color: #ffffff !important;
+  color: var(--color-text) !important;
+}
+
+/* Mobile menu */
+.slicknav_nav, .slicknav_nav ul, .slicknav_nav a {
+  background-color: #ffffff !important;
+  color: var(--color-text) !important;
+}
+.slicknav_nav a { border-bottom: 1px solid rgba(0,0,0,0.06); }
+
+/* Dropdowns */
+.dropdown-menu, .dropdown-menu li a {
+  background-color: #ffffff !important;
+  color: var(--color-text) !important;
+}
+.dropdown-menu li a:hover { background-color: var(--color-accent) !important; color: #071216 !important; }
+
+/* Sections and cards */
+.bg-lightgrey { background-color: #F7F7F7 !important; }
+.bg-grey { background-color: #f3f3f3 !important; }
+.box-shadow { box-shadow: 0 6px 18px rgba(0,0,0,0.06) !important; }
+
+/* Buttons */
+.btn, .btn-primary, .btn2 {
+  background-color: var(--color-accent) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+.btn-outline, .btn-outline:hover { background: transparent !important; color: var(--color-text) !important; border-color: rgba(0,0,0,0.08) !important; }
+
+/* Inputs / Search popup */
+#search1 { background-color: rgba(255,255,255,0.98) !important; }
+#search1 .form-control, input, textarea { background: #ffffff !important; color: var(--color-text) !important; border-color: rgba(0,0,0,0.08) !important; }
+
+/* Pre/code */
+pre, code { background: #f5f5f5 !important; color: var(--color-text) !important; border: 1px solid rgba(0,0,0,0.06); }
+
+/* Footer */
+/* footer, #documenter_copyright, .footer { background: #ffffff !important; color: var(--color-text) !important; } */
+
+/* Slight image adjustments */
+img { filter: none; }
+
+
+.btn-effect-2 {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #fff;      /* default background white */
+  color: #000;           /* default text black */
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-effect-2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-effect-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;              /* starts collapsed */
+  height: 100%;
+  background: #bab7b7;      /* hover background (black) */
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.btn-effect-2:hover {
+  color: #fff;           /* text becomes white */
+}
+
+.btn-effect-2:hover::before {
+  width: 100%;           /* fill entire button with black */
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.speaker-title a {
+  color: #fff !important;
+  text-decoration: none; /* optional: removes underline */
+}
+
+.speaker-title a:hover {
+  color: #ffffff !important; /* optional: pink/hover color */
+}

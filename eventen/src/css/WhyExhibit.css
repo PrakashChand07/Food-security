@@ -1,0 +1,195 @@
+/* WhyExhibit.css */
+
+.why-exhibit-section {
+    padding: 120px 0;
+    
+}
+
+.hero-section {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.hero-section .display-4 {
+    color: #2c5aa0;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section .text-muted {
+    color: #666 !important;
+}
+
+.hero-section .text-primary {
+    color: #1976d2 !important;
+}
+
+.box-shadow {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+/* List styling */
+.list-unstyled li {
+    margin-bottom: 5px;
+}
+
+.list-unstyled li span:first-child {
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Icon circles */
+.rounded-circle {
+    transition: transform 0.3s ease;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Button styling */
+.btnn {
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #13812a, #1c8f34);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #13812a, #1c8f34);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #13812a;
+}
+
+.btn-outline-primary {
+    border: 2px solid #13812a;
+    color: #13812a;
+}
+
+.btn-outline-primary:hover {
+    background: #106c24;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* Feature boxes */
+.feature-box {
+    padding: 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .hero-section .display-4 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-exhibit-section {
+        padding: 80px 0;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-exhibit-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section {
+        margin-top: 40px;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 32px;
+    }
+    
+    .btnn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .d-md-flex {
+        flex-direction: column;
+    }
+    
+    .box-shadow {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .display-4 {
+        font-size: 28px;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .p-4, .p-5 {
+        padding: 20px !important;
+    }
+}
+
+
+form {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #222;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #000 !important;
+  border-radius: 4px;
+  padding: 10px 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #333 !important;
+  box-shadow: none;
+}
+
+.btn-dark {
+  background-color: #000;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}

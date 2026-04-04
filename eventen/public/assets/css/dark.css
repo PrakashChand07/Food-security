@@ -1,0 +1,90 @@
+/* Dark theme overrides for Eventen */
+:root {
+  --color-primary: #06323f;   /* deep teal */
+  --color-secondary: #254a52; /* muted teal */
+  --color-accent: #3b9525;    /* accent mint */
+  --color-highlight: #2bb0a8;
+  --color-warning: #ffcf57;
+  --color-text: #e6eef6;      /* light text */
+  --color-background: #0b0f14;/* page background */
+}
+
+/* Page background & base text */
+/* html, body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text) !important;
+} */
+
+/* Links */
+a { color: var(--color-accent) !important; }
+a:hover { color: #a7fff3 !important; }
+
+/* Header / navbar */
+.main_header_area, .header-content, nav.navbar, .fixed-top {
+  background-color: rgba(7, 18, 22, 0.95) !important;
+  color: var(--color-text) !important;
+}
+
+/* Mobile menu */
+.slicknav_nav, .slicknav_nav ul, .slicknav_nav a {
+  background-color: #071216 !important;
+  color: var(--color-text) !important;
+}
+.slicknav_nav a { border-bottom: 1px solid rgba(255,255,255,0.04); }
+
+/* Dropdowns */
+.dropdown-menu, .dropdown-menu li a {
+  background-color: #071216 !important;
+  color: var(--color-text) !important;
+  /* border-radius: 6px; */
+}
+.dropdown-menu li a:hover { background-color: var(--color-accent) !important; color: #071216 !important; }
+
+/* Sections and cards */
+.bg-lightgrey, .bg-grey, .bg-pink {
+  background-color: transparent !important;
+}
+.box-shadow { box-shadow: 0 6px 18px rgba(0,0,0,0.6) !important; }
+
+/* Buttons */
+.btn, .btn-primary, .btn2 {
+  background-color: var(--color-accent) !important;
+  color: #071216 !important;
+  border-color: transparent !important;
+}
+.btn-outline, .btn-outline:hover { background: transparent !important; color: var(--color-text) !important; border-color: rgba(255,255,255,0.08) !important; }
+
+/* Inputs / Search popup */
+#search1 { background-color: rgba(10,14,18,0.95) !important; }
+#search1 .form-control, textarea { background: #F7F7F7 !important; color: var(--color-text) !important; border-color: rgba(255,255,255,0.04) !important; }
+
+/* Banners and overlays */
+.banner, .feature, .feature .overlay {
+  background-color: black;
+}
+.banner .wave .elementor-shape-fill { fill: var(--color-background); }
+
+/* Misc */
+.partner-img-box img { opacity: 0.95; filter: brightness(1.9); }
+.countdown-inner span { color: #3b9525 !important; }
+pre, code { background: #071216 !important; color: var(--color-text) !important; border: 1px solid rgba(255,255,255,0.04); }
+
+/* Ensure footer / copyright are readable */
+footer, #documenter_copyright, .footer {
+  background: #071216 !important;
+  color: var(--color-text) !important;
+}
+
+/* High-contrast utility */
+.text-dark-contrast { color: #071216 !important; }
+
+/* Ensure plugin components adapt */
+.slicknav_btn.slicknav_open:before, .slicknav_btn.slicknav_collapsed:before { color: var(--color-text) !important; }
+.slicknav_menu .slicknav_icon-bar { background-color: var(--color-text) !important; }
+
+/* Small-screen tweaks */
+@media (max-width: 576px){
+  .slicknav_nav { top: 85px; }
+}
+
+/* End of dark.css */

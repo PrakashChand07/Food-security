@@ -1,0 +1,30 @@
+.about-conference {
+  background-color: #f9fafc;
+  color: #333;
+}
+
+
+.about-conference h2,
+.about-conference h3,
+.about-conference h4 {
+  font-weight: 700;
+}
+
+.about-conference p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-conference ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-conference ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.about-conference .shadow-sm {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

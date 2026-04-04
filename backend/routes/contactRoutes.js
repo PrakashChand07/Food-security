@@ -1,0 +1,22 @@
+const express = require('express');
+const { body, validationResult } = require('express-validator');
+const router = express.Router();
+const controller = require('../controllers/contactController');
+
+const runValidation = (req, res, next) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) return res.status(400).json({ success: false, errors: errors.array() });
+  next();
+};
+
+router.post('/create', [
+  body('name').notEmpty().withMessage('Name required'),
+  body('email').isEmail().withMessage('Valid email required'),
+], runValidation, controller.create);
+
+router.get('/', controller.getAll);
+router.get('/:id', controller.getOne);
+router.patch('/:id', controller.update);
+router.delete('/:id', controller.delete);
+
+module.exports = router;

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Default to light theme (white background). Theme CSS can override these variables. */
+/* html, body {
+  background: var(--color-background, #ffffff);
+  color: var(--color-text, #223645);
+} */
+
+/* Optional class-based toggles */
+.theme-dark html, .theme-dark body {
+  background: #0b0f14 !important;
+  color: #e6eef6 !important;
+}

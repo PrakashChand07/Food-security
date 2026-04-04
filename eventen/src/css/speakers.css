@@ -1,0 +1,128 @@
+:root {
+  --speaker-bg: #ffffff;
+  --speaker-text: #1f1f1f;
+  --speaker-muted: #6b6b6b;
+  --speaker-card-border: #e7e7e7;
+}
+
+/* SECTION */
+.speakers-section {
+  background-color: var(--speaker-bg);
+  padding: 80px 0;
+}
+
+/* HEADER */
+.speakers-header {
+  margin-bottom: 40px;
+}
+
+.speakers-header p {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--speaker-muted);
+  margin-bottom: 8px;
+}
+
+.speakers-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--speaker-text);
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.title-slash {
+  color: #a5792a;
+}
+
+/* GRID */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.speaker-card {
+  background: #fff;
+  border: 1px solid var(--speaker-card-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.speaker-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.speaker-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* REMOVE ANY OVERLAY OR EFFECT */
+.speaker-image::before,
+.speaker-image::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* CONTENT */
+.speaker-meta {
+  padding: 16px;
+  background: #fff;
+}
+
+.speaker-meta h5 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--speaker-text);
+}
+
+.speaker-meta p,
+.speaker-meta span {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--speaker-muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .speakers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .speakers-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .speakers-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}
