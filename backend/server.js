@@ -12,6 +12,8 @@ const allowedOrigins = [
   "https://new-theme-pied.vercel.app",
   "https://foodsecuritysummitx.com",
   "https://www.foodsecuritysummitx.com",
+  "https://web.foodsecuritysummitx.com",
+  "https://admin.foodsecuritysummitx.com",
   "https://food-secure-admin.vercel.app",
   "http://localhost:3000",
   "http://localhost:5173",
