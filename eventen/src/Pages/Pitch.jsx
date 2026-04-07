@@ -133,7 +133,7 @@ const StartupPitch = () => {
                   investors, accelerators, and agri-industry leaders.
                 </p>
                 <p className="mb-0">
-                  <strong>15 to 16 Sep 2026 | Dubai, UAE</strong>
+                  <strong>15 or 16 Sep 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>

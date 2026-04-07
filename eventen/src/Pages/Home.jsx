@@ -111,7 +111,7 @@ function Home() {
                   >
                     <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                       <li className="pe-2 border-end border-1 border-lightgrey">
-                        <i className="fa  fa-calendar-o pe-1"></i> 15 to 16 Sep, 2026
+                        <i className="fa  fa-calendar-o pe-1"></i> 15 or 16 Sep, 2026
                       </li>
                       <li className="ps-2">
                         <i className="fa  fa-map-marker pe-1"></i> Dubai
@@ -254,7 +254,7 @@ function Home() {
                               <h5 className="mb-1">WHEN</h5>
                               <small className="text-muted">
                                 {" "}
-                                15 to 16 Sep 2026
+                                15 or 16 Sep 2026
                               </small>
                             </div>
                           </div>
@@ -1005,7 +1005,7 @@ function Home() {
                             agribusiness leaders to accelerate solutions for a
                             sustainable and food-secure future. The 2026 edition
                             will be held on{" "}
-                            <strong>15 to 16 Sep in Dubai, UAE</strong>, under the
+                            <strong>15 or 16 Sep in Dubai, UAE</strong>, under the
                             theme <em>“Food for All.”</em>
                           </div>
                         </div>

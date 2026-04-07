@@ -252,7 +252,7 @@ const handlePopupSubmit = async (e) => {
                                 <h5 className="mb-1">WHEN</h5>
                                 <small className="text-muted">
                                   {" "}
-                                  15 to 16 Sep 2026
+                                  15 or 16 Sep 2026
                                 </small>
                               </div>
                             </div>
