@@ -92,15 +92,15 @@ function Footer() {
                 </p>
                 <p className="mb-2">
                   <a
-                    href="https://wa.me/919466039893"
+                    href="https://wa.me/+971585508265"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="footer-link"
                   >
-                    WhatsApp: +91-9466039893
+                    WhatsApp: +971 58 550 8265
                   </a>
                 </p>
-                <p className="mb-2">CS Hotline: +91-9466039893</p>
+                <p className="mb-2">CS Hotline: +971 58 550 8265</p>
                 <p className="small text-white-60">
                   Operating Hours: Monday – Friday, 10:00 AM – 6:00 PM (GST Time)
                 </p>

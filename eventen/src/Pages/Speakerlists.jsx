@@ -32,7 +32,7 @@ const Speakers = () => {
     { id: 34, name: "Emmanuel T.", designation: "CEO and Co-Founder, Everlend", image: "/assets/images/speaker/34.jpg", url: "https://www.linkedin.com/in/emmanuel-t-630a17178/" },
     { id: 35, name: "Josh McClain", designation: "CEO, Firebolt Carbon LLC", image: "/assets/images/speaker/35.jpg", url: "https://www.linkedin.com/in/josh-mcclain-121616325/" },
     { id: 36, name: "Thomas Paveglio", designation: "Founder & CEO, Cambria Bio", image: "/assets/images/speaker/36.jpg", url: "https://www.linkedin.com/in/thomas-paveglio-51083617b/" },
-    { id: 37, name: "Ts. Poonthalir Veeran", designation: "Chief Executive Officer, Nielsen Nexus Group", image: "/assets/images/speaker/37.jpg", url: "https://www.linkedin.com/in/ts-poonthalir-veeran-a93921201/" },
+    { id: 37, name: "Ts. Poonthalir Veeran", designation: "Chief Executive Officer, Nielson Nexus Group", image: "/assets/images/speaker/37.jpg", url: "https://www.linkedin.com/in/ts-poonthalir-veeran-a93921201/" },
     { id: 38, name: "H.E. Dr. Obaid Saif Hamad Al Zaabi", designation: "Board Chairman of the Arab Authority for Agricultural Investment and Development", image: "/assets/images/speaker/38.jpg", url: "https://www.linkedin.com/in/obaid-s-al-zaabi-phd-mba-ca-cma-cipa-aaa-823b9913/" },
     { id: 39, name: "Paul Streater", designation: "Chief Executive Officer, GroNatural dba GroPro", image: "/assets/images/speaker/39.jpg", url: "https://www.linkedin.com/in/pstreater/" },
     { id: 40, name: "Hasan Chaithanya D", designation: "Founder, Tapovanam Organic Farming Systems Private Limited", image: "/assets/images/speaker/40.jpg", url: "https://www.linkedin.com/in/hasan-chaithanya-d/" },
@@ -46,10 +46,10 @@ const Speakers = () => {
     { id: 51, name: "Michael Ott", designation: "Senior Ag Industry Expert for Granite Creek Capital Partners, L.L.C.", image: "/assets/images/speaker/51.jpg", url: "https://www.linkedin.com/in/michael-ott-362a2/" },
     { id: 52, name: "Abdalla Elkhouli", designation: "Head of AgTech, TriplA", image: "/assets/images/speaker/52.jpg", url: "https://www.linkedin.com/in/abdalla-elkhouli/" },
     { id: 53, name: "Dr. Balaji Vasudevan", designation: "Venture Partner And AgroBioscience Consultant", image: "/assets/images/speaker/53.jpg", url: "https://www.linkedin.com/in/balaji-vasudevan/" },
-    { id: 54, name: "Mafah Cornelius Kuta", designation: "Founder/CEO, Wandusoa Organic Cameroon", image: "/assets/images/speaker/54.jpg", url: "https://www.linkedin.com/in/mafahkutacornelius/" },
+    // { id: 54, name: "Mafah Cornelius Kuta", designation: "Founder/CEO, Wandusoa Organic Cameroon", image: "/assets/images/speaker/54.jpg", url: "https://www.linkedin.com/in/mafahkutacornelius/" },
     { id: 55, name: "Anupam Kumar", designation: "Founder & Principal at TSR Lab", image: "/assets/images/speaker/55.jpg", url: "https://www.linkedin.com/in/anupamiitkgp/" },
     { id: 56, name: "Safia Sarfaraz", designation: "Strategic Partnerships and Alliances at BigHaat | Founder and CEO at Healthing Global Private Limited", image: "/assets/images/speaker/56.jpg", url: "https://www.linkedin.com/in/safia-sarfaraz-6883091b8/" },
-    { id: 57, name: "Daniel Chavo Kisekka", designation: "Founder & CEO, Veridian Bioharvest", image: "/assets/images/speaker/57.jpg", url: "https://www.linkedin.com/in/daniel-chavo-kisekka-thefirst/" },
+    // { id: 57, name: "Daniel Chavo Kisekka", designation: "Founder & CEO, Veridian Bioharvest", image: "/assets/images/speaker/57.jpg", url: "https://www.linkedin.com/in/daniel-chavo-kisekka-thefirst/" },
   ];
 
 

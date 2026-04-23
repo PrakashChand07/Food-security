@@ -86,7 +86,7 @@ const Visit = () => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>15 or 16 Sep 2026 | Dubai, UAE</strong>
+                  <strong>15 & 16 Sep 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>

@@ -143,7 +143,7 @@ const Header = () => {
           }}
         >
           {Array(20)
-            .fill("Virtual Edition - 21 May, 2026 | Gateway to Middle East Food & Agri Markets")
+            .fill("Virtual Edition - june, 2026 | Gateway to Middle East Food & Agri Markets")
             .map((text, i) => (
               <span key={i} style={{ marginRight: "40px" }}>
                 {text} •
