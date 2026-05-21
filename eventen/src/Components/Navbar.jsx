@@ -187,6 +187,12 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item">
+            <Link to="/virtual-meeting" className="nav-link px-2 py-2 text-black">
+              Virtual Meeting
+            </Link>
+          </li>
+
+          <li className="nav-item">
             <Link to="/PastEdition" className="nav-link px-2 py-2 text-black">
               Past Edition
             </Link>

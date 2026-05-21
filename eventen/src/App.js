@@ -34,6 +34,7 @@ import Speakerdetail from "./Pages/Speakerdetail";
 import Speakers from "./Pages/Speakerlists";
 import Agenda from "./Pages/Agenda";
 import EventPartners from "./Pages/EventPartner";
+import Virtual from "./Pages/virtual";
 
 import KeyInformation from "./Pages/KeyInformation";
 
@@ -89,6 +90,7 @@ function App() {
         <Route path="/Blogsingle" element={<Blogsingle />} />
         <Route path="/Visit" element={<Visit />} />
         <Route path="/EventPartners" element={<EventPartners />} />
+        <Route path="/virtual-meeting" element={<Virtual />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
