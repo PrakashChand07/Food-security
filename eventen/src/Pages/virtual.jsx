@@ -134,25 +134,25 @@ function Virtual() {
             
             <div className="row justify-content-center align-items-center g-4 mt-2">
               {[
-                { name: "Emirates Bustanica", logo: "/assets/images/companysLogo/36.jpg", label: "In Partnership With" },
-                { name: "Pure Harvest", logo: "/assets/images/companysLogo/1.jpg", label: "Supported By" },
-                { name: "Abu Dhabi Agriculture & Food Safety Authority", logo: "/assets/images/companysLogo/2.jpg", label: "Presented By" },
-                { name: "Silal", textFallback: true, label: "Presented By" },
-                { name: "AAAID", textFallback: true, label: "Supported By" },
-                { name: "WFP", textFallback: true, label: "In Partnership With" },
+                { name: "Emirates Bustanica", logo: "/assets/images/virtual/InPartnershipwith.jpg", label: "In Partnership With" },
+                { name: "Pure Harvest", logo: "/assets/images/virtual/Organisedby.jpg", label: "Organised By" },
+                { name: "Abu Dhabi Agriculture & Food Safety Authority", logo: "/assets/images/virtual/Supportedby.jpg", label: "Supported By" },
+                // { name: "Silal", textFallback: true, label: "Presented By" },
+                // { name: "AAAID", textFallback: true, label: "Supported By" },
+                // { name: "WFP", textFallback: true, label: "In Partnership With" },
               ].map((p, index) => (
                 <div key={index} className="col-lg-2 col-md-4 col-6 text-center">
                   <span className="d-block text-muted mb-2 fw-bold" style={{ fontSize: "0.75rem", textTransform: "uppercase" }}>{p.label}</span>
                   <div 
                     className="p-3 bg-light rounded d-flex flex-column align-items-center justify-content-center shadow-sm" 
-                    style={{ 
-                      height: "140px", 
-                      border: "1px solid rgba(19, 129, 42, 0.15)",
-                      transition: "transform 0.3s ease",
-                      cursor: "pointer"
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
-                    onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
+                    // style={{ 
+                    //   height: "140px", 
+                    //   border: "1px solid rgba(19, 129, 42, 0.15)",
+                    //   transition: "transform 0.3s ease",
+                    //   cursor: "pointer"
+                    // }}
+                    // onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
+                    // onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
                   >
                     {!p.textFallback ? (
                       <img 
@@ -178,6 +178,58 @@ function Virtual() {
         </div>
       </section>
       {/*--Trust Logos Section end--*/}
+       <section className="partners py-8 bg-white border-bottom border-light">
+        <div className="container">
+          <div className="partner-inner">
+            <div className="partner-title text-center pb-5 w-lg-60 m-auto">
+              <p className="mb-1 pink">TRUST LOGOS</p>
+              <h2 className="mb-2">
+                STARTUP <span className="pink">JOINING</span>
+              </h2>
+            </div>
+            
+            <div className="row justify-content-center align-items-center g-4 mt-2">
+              {[
+                { name: "Emirates Bustanica", logo: "/assets/images/virtual/startup/BK.jpg", label: "Bk GreenHouses" },
+                { name: "Pure Harvest", logo: "/assets/images/virtual/startup/EverlendAgritech.jpg", label: "Everlend Agritech" },
+                { name: "Abu Dhabi Agriculture & Food Safety Authority", logo: "/assets/images/virtual/startup/Farmers.jpg", label: "Farmers Lab" },
+                 { name: "Emirates Bustanica", logo: "/assets/images/virtual/startup/Seafertil.jpg", label: "Seafertil" },
+          
+              ].map((p, index) => (
+                <div key={index} className="col-lg-2 col-md-4 col-6 text-center">
+                  <span className="d-block text-muted mb-2 fw-bold" style={{ fontSize: "0.75rem", textTransform: "uppercase" }}>{p.label}</span>
+                  <div 
+                    className="p-3 bg-light rounded d-flex flex-column align-items-center justify-content-center shadow-sm" 
+                    // style={{ 
+                    //   height: "140px", 
+                    //   border: "1px solid rgba(19, 129, 42, 0.15)",
+                    //   transition: "transform 0.3s ease",
+                    //   cursor: "pointer"
+                    // }}
+                    // onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
+                    // onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
+                  >
+                    {!p.textFallback ? (
+                      <img 
+                        src={p.logo} 
+                        alt={p.name} 
+                        className="img-fluid" 
+                        style={{ maxHeight: "80px", maxWidth: "100%", objectFit: "contain" }} 
+                      />
+                    ) : (
+                      <div className="d-flex flex-column align-items-center justify-content-center h-100">
+                        <span className="pink fw-bold" style={{ fontSize: "1.15rem", letterSpacing: "0.5px" }}>{p.name}</span>
+                        <small className="text-muted" style={{ fontSize: "0.7rem", marginTop: "4px" }}>Official StartUp Partner</small>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+  
+          </div>
+        </div>
+      </section>
 
       {/*--Why This Platform Section start--*/}
       <section className="feature text-black py-8 bg-light">
@@ -342,7 +394,7 @@ function Virtual() {
       {/*--How It Works Section end--*/}
 
       {/*--Speakers / Ecosystem Leaders Section start--*/}
-      <section className="speakers py-8 bg-white">
+      {/* <section className="speakers py-8 bg-white">
         <div className="container">
           <div className="speaker-inner">
             <div className="speaker-title text-center pb-6">
@@ -407,7 +459,6 @@ function Virtual() {
                 </div>
               ))}
               
-              {/* "+ More Joining" Card to avoid overcrowding (Total 6-8 leaders concept) */}
               <div className="col-lg-3 col-md-6">
                 <div 
                   className="speaker-box position-relative overflow-hidden rounded-3 d-flex flex-column align-items-center justify-content-center text-center p-4" 
@@ -430,7 +481,7 @@ function Virtual() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*--Speakers Section end--*/}
 
       {/*--Proven Track Record Section start--*/}
@@ -478,7 +529,7 @@ function Virtual() {
             </div>
             
             {/* Logos underneath */}
-            <div className="pt-6">
+            {/* <div className="pt-6">
               <p className="text-center text-muted fw-bold mb-4" style={{ letterSpacing: "1px", fontSize: "0.85rem", textTransform: "uppercase" }}>
                 COMPANIES REPRESENTED IN OUR ECOSYSTEM
               </p>
@@ -501,7 +552,7 @@ function Virtual() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
