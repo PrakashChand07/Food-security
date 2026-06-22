@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
                   Register Now for <b>Food Security SummitX 2026</b> – Dubai
                 </h3>
                 <p className="mb-0">
-                  <strong>15 & 16 Sep 2026 | Dubai, UAE</strong>
+                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>
@@ -280,6 +280,8 @@ const handleSubmit = async (e) => {
                     <option value="Google">Google</option>
                     <option value="Direct">Direct</option>
                     <option value="Social Media">Social Media</option>
+                     <option value="De Bacci Capital">De Bacci Capital</option>
+                      <option value="Epicon Capital Club">Epicon Capital Club</option>
                     <option value="Others">Others</option>
                   </select>
                 </div>

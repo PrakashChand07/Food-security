@@ -252,7 +252,7 @@ const handlePopupSubmit = async (e) => {
                                 <h5 className="mb-1">WHEN</h5>
                                 <small className="text-muted">
                                   {" "}
-                                  15 & 16 Sep 2026
+                                  29 & 30 June 2026
                                 </small>
                               </div>
                             </div>
@@ -778,7 +778,7 @@ const handlePopupSubmit = async (e) => {
               into a movement of innovation, investment, and shared vision.
             </p>
             <p>
-              Join us in <b>Sep 2026 – Dubai</b>, as{" "}
+              Join us in <b>Jun 2026 – Dubai</b>, as{" "}
               <b>Food Security SummitX 2026</b> builds upon this legacy —
               bringing together even more leaders, innovators, and investors to
               push the boundaries of global food security.
