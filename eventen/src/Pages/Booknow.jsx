@@ -17,6 +17,7 @@ const Booknow = () => {
     interest: "",
     hearAboutUs: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,6 +29,7 @@ const Booknow = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+  setLoading(true);
 
   try {
     const apiBase = process.env.REACT_APP_API_URL || "";
@@ -64,6 +66,8 @@ const handleSubmit = async (e) => {
       err?.message ||
         "This email has already been used to register for the event."
     );
+  } finally {
+    setLoading(false);
   }
 };
 
@@ -298,12 +302,20 @@ const handleSubmit = async (e) => {
                   </label>
                 </div>
 
-                <div className="d-grid mt-4">
+                 <div className="d-grid mt-4">
                   <button
                     type="submit"
                     className="btn btn-dark btn-lg py-3 rounded-3"
+                    disabled={loading}
                   >
-                    Register Now
+                    {loading ? (
+                      <span>
+                        <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        Registering...
+                      </span>
+                    ) : (
+                      "Register Now"
+                    )}
                   </button>
                 </div>
               </form>
