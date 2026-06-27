@@ -28,7 +28,7 @@ function Footer() {
                     collaborate — every message helps shape the dialogue toward
                     a food-secure future.
                   </p>
-                  <SubscribeForm />
+                  {/* <SubscribeForm /> */}
                 </div>
               </div>
             </div>

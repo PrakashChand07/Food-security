@@ -74,9 +74,9 @@ function Virtual() {
                 <div className="banner-button mt-2">
                   <div className="row g-3 justify-content-center justify-content-lg-start">
                     <div className="col-auto">
-                      <Link to="/Booknow" className="btn btn-theme-action px-4 py-2 text-white holographic-btn">
+                      <a href="https://virtual-meeting.foodsecuritysummitx.com/auth/signup" className="btn btn-theme-action px-4 py-2 text-white holographic-btn">
                         <span>APPLY FOR PARTICIPATION</span>
-                      </Link>
+                      </a>
                     </div>
                     <div className="col-auto">
                       <Link 
@@ -596,9 +596,9 @@ function Virtual() {
               </p>
               
               <div className="ticket-button d-flex justify-content-center flex-wrap gap-3">
-                <Link to="/Booknow" className="btn btn-lg px-4 py-2 btn-theme-action" style={{ background: "#ffffff", color: "#13812a", fontWeight: "700", border: "2px solid #ffffff" }}>
+                <a href="https://virtual-meeting.foodsecuritysummitx.com/auth/signup" className="btn btn-lg px-4 py-2 btn-theme-action" style={{ background: "#ffffff", color: "#13812a", fontWeight: "700", border: "2px solid #ffffff" }}>
                   APPLY NOW
-                </Link>
+                </a>
                 <Link to="/exhibit-sponsor" className="btn btn-lg px-4 py-2 btn-theme-action text-white" style={{ background: "#ff007f", borderColor: "#ff007f", fontWeight: "700" }}>
                   PARTNER WITH US
                 </Link>
