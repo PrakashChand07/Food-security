@@ -1,6 +1,26 @@
+const nodemailer = require('nodemailer');
 const { Resend } = require('resend');
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize nodemailer transporter if SMTP credentials are provided
+let transporter = null;
+if (process.env.SMTP_USER && process.env.SMTP_PASS) {
+  const host = process.env.SMTP_HOST || 'smtp-relay.brevo.com';
+  const port = parseInt(process.env.SMTP_PORT || '587', 10);
+  const secure = port === 465;
+
+  transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+  console.log(`✉️ Email configured via SMTP: ${host}:${port} (${process.env.SMTP_USER})`);
+}
+
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 function buildSubject(formType) {
   switch ((formType || '').toLowerCase()) {
@@ -62,13 +82,17 @@ function buildHtml(formType, data) {
 }
 
 async function sendFormEmail(formType, data) {
-  if (!process.env.RESEND_API_KEY) {
-    console.error('❌ RESEND_API_KEY not set');
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const fromEmail = process.env.FROM_EMAIL;
+  const fromName = process.env.FROM_NAME || 'Food Security Team';
+
+  if (!adminEmail || !fromEmail) {
+    console.error('❌ ADMIN_EMAIL / FROM_EMAIL not set');
     return;
   }
 
-  if (!process.env.ADMIN_EMAIL || !process.env.FROM_EMAIL) {
-    console.error('❌ ADMIN_EMAIL / FROM_EMAIL not set');
+  if (!transporter && !resend) {
+    console.error('❌ Neither SMTP nor RESEND_API_KEY is configured');
     return;
   }
 
@@ -77,17 +101,40 @@ async function sendFormEmail(formType, data) {
     payload = data.toObject();
   }
 
-  try {
-    await resend.emails.send({
-      from: `${process.env.FROM_NAME} <${process.env.FROM_EMAIL}>`,
-      to: process.env.ADMIN_EMAIL,
-      subject: buildSubject(formType),
-      html: buildHtml(formType, payload),
-    });
+  const subject = buildSubject(formType);
+  const html = buildHtml(formType, payload);
 
-    console.log(`✅ Email sent successfully for '${formType}'`);
-  } catch (err) {
-    console.error(`❌ Email failed for '${formType}':`, err.message);
+  // 1. Try SMTP if configured
+  if (transporter) {
+    try {
+      await transporter.sendMail({
+        from: `"${fromName}" <${fromEmail}>`,
+        to: adminEmail,
+        subject,
+        html,
+      });
+      console.log(`✅ Email sent successfully via SMTP for '${formType}'`);
+      return;
+    } catch (err) {
+      console.error(`❌ SMTP Email failed for '${formType}':`, err.message);
+      // fallback to Resend if it's also configured
+    }
+  }
+
+  // 2. Try Resend if configured
+  if (resend) {
+    try {
+      await resend.emails.send({
+        from: `${fromName} <${fromEmail}>`,
+        to: adminEmail,
+        subject,
+        html,
+      });
+      console.log(`✅ Email sent successfully via Resend for '${formType}'`);
+      return;
+    } catch (err) {
+      console.error(`❌ Resend Email failed for '${formType}':`, err.message);
+    }
   }
 }
 
