@@ -1,7 +1,7 @@
 // ExhibitSponsor.jsx
 import React, { useState } from "react";
 import Breadcrumb from "../Components/Breadcrumb";
-import countriesData from "../data/country.json"; 
+import countriesData from "../data/country.json";
 import toast, { Toaster } from "react-hot-toast";
 
 const ExhibitSponsor = () => {
@@ -31,55 +31,55 @@ const ExhibitSponsor = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const apiBase = process.env.REACT_APP_API_URL || "";
+    try {
+      const apiBase = process.env.REACT_APP_API_URL || "";
 
-    const res = await fetch(`${apiBase}/api/forms/exhibit-sponsor`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+      const res = await fetch(`${apiBase}/api/forms/exhibit-sponsor`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      throw data; // 👈 backend error message
-    }
+      if (!res.ok) {
+        throw data; // 👈 backend error message
+      }
 
-    toast.success(
-      "Thank you for your interest in exhibiting or sponsoring! Our team will contact you soon."
-    );
+      toast.success(
+        "Thank you for your interest in exhibiting or sponsoring! Our team will contact you soon."
+      );
 
-    // reset form
-    setFormData({
-      firstName: "",
-      lastName: "",
-      linkedIn: "",
-      email: "",
-      companyName: "",
-      companyWebsite: "",
-      jobTitle: "",
-      natureOfBusiness: "",
-      yearsOfBusiness: "",
-      sizeOfBusiness: "",
-      country: "",
-      phoneNumber: "",
-      standType: "",
-      announcements: "",
-      sponsorship: "",
-    });
-  } catch (err) {
-    console.error("ExhibitSponsor submit error", err);
+      // reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        linkedIn: "",
+        email: "",
+        companyName: "",
+        companyWebsite: "",
+        jobTitle: "",
+        natureOfBusiness: "",
+        yearsOfBusiness: "",
+        sizeOfBusiness: "",
+        country: "",
+        phoneNumber: "",
+        standType: "",
+        announcements: "",
+        sponsorship: "",
+      });
+    } catch (err) {
+      console.error("ExhibitSponsor submit error", err);
 
-    toast.error(
-      err?.message ||
+      toast.error(
+        err?.message ||
         "This email has already been used to submit an exhibit/sponsorship request."
-    );
-  }
-};
+      );
+    }
+  };
 
 
   return (
@@ -100,7 +100,7 @@ const handleSubmit = async (e) => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
+                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ const handleSubmit = async (e) => {
                     {" "}
                     This form connects you directly with our{" "}
                     <strong>Commercial & Sponsorship Team.
-</strong>
+                    </strong>
                     Together, we’ll craft a package aligned with your objectives — ensuring every square meter, logo, and conversation delivers value that lasts beyond the event.
                   </p>
                 </div>
@@ -385,22 +385,22 @@ const handleSubmit = async (e) => {
                 </div>
 
                 <div className="row">
-                    <div className="col-md-6 mb-4">
-  <label className="form-label">Country Code</label>
-  <select
-    className="form-select"
-    name="countryCode"
-    value={formData.countryCode}
-    onChange={handleChange}
-  >
-    <option value="">Select with country code</option>
-    {countriesData.countries.map((country, index) => (
-      <option key={index} value={country.code}>
-        {country.name} ({country.code})
-      </option>
-    ))}
-  </select>
-</div>
+                  <div className="col-md-6 mb-4">
+                    <label className="form-label">Country Code</label>
+                    <select
+                      className="form-select"
+                      name="countryCode"
+                      value={formData.countryCode}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select with country code</option>
+                      {countriesData.countries.map((country, index) => (
+                        <option key={index} value={country.code}>
+                          {country.name} ({country.code})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
                   <div className="col-md-6 mb-4">
                     <label className="form-label">Phone Number</label>

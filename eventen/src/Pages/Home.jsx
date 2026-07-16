@@ -57,10 +57,10 @@ function Home() {
       {/*!-- Bannner section starts --*/}
       <section className="banner position-relative pb-0">
         {/* Video background replaces overlay */}
-                    {/* src="https://res.cloudinary.com/dqh7vmn5c/video/upload/v1690000000/ab_aeclzl.mp4" */}
+        {/* src="https://res.cloudinary.com/dqh7vmn5c/video/upload/v1690000000/ab_aeclzl.mp4" */}
         <video className="banner-video" autoPlay muted loop playsInline>
           <source
-          src="https://urbanplantcare.in/videos/ab.mp4"
+            src="https://urbanplantcare.in/videos/ab.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -111,7 +111,7 @@ function Home() {
                   >
                     <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                       <li className="pe-2 border-end border-1 border-lightgrey">
-                        <i className="fa  fa-calendar-o pe-1"></i> 29 & 30 June, 2026
+                        <i className="fa  fa-calendar-o pe-1"></i>6 & 7 October, 2026
                       </li>
                       <li className="ps-2">
                         <i className="fa  fa-map-marker pe-1"></i> Dubai
@@ -227,7 +227,7 @@ function Home() {
                             </div>
                             <div className="location-info">
                               <h5 className="mb-1">WHERE</h5>
-                              <small  className="text-muted">Dubai, UAE</small>
+                              <small className="text-muted">Dubai, UAE</small>
                             </div>
                           </div>
                         </a>
@@ -254,7 +254,7 @@ function Home() {
                               <h5 className="mb-1">WHEN</h5>
                               <small className="text-muted">
                                 {" "}
-                                29 & 30 June 2026
+                                6 & 7 October, 2026
                               </small>
                             </div>
                           </div>
@@ -349,11 +349,10 @@ function Home() {
                 ].map((item, i, arr) => (
                   <div
                     key={i}
-                    className={`counter-box flex-fill p-2 text-center ${
-                      i !== arr.length - 1
-                        ? "border-end border-dark border-opacity-25"
-                        : ""
-                    }`}
+                    className={`counter-box flex-fill p-2 text-center ${i !== arr.length - 1
+                      ? "border-end border-dark border-opacity-25"
+                      : ""
+                      }`}
                   >
                     <CountUpBox end={item.end} label={item.label} />
                   </div>
@@ -1005,7 +1004,7 @@ function Home() {
                             agribusiness leaders to accelerate solutions for a
                             sustainable and food-secure future. The 2026 edition
                             will be held on{" "}
-                            <strong>29 & 30 June in Dubai, UAE</strong>, under the
+                            <strong>6 & 7 October, 2026 in Dubai, UAE</strong>, under the
                             theme <em>“Food for All.”</em>
                           </div>
                         </div>
@@ -1201,7 +1200,7 @@ function Home() {
                               type="email"
                               placeholder="Email Address"
                               className="mb-5"
-                              style={{ border: "1px solid black", borderRadius:"25px", padding:"15px" }}
+                              style={{ border: "1px solid black", borderRadius: "25px", padding: "15px" }}
                               required
                             />
                           </div>
@@ -1249,9 +1248,9 @@ function Home() {
                       className="justify-content-center align-self-center ms-6"
                       style={{ color: "white" }}
                     >
-                    <h3 className=" pb-2" style={{ color: "white" }}>Plan your visit:
-</h3>
-<br/><br/>
+                      <h3 className=" pb-2" style={{ color: "white" }}>Plan your visit:
+                      </h3>
+                      <br /><br />
                       <h5 className=" pb-2" style={{ color: "white" }}>
                         EVENT VENUE:
                       </h5>

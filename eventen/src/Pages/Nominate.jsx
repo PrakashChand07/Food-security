@@ -37,57 +37,57 @@ const Nominate = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const apiBase = process.env.REACT_APP_API_URL || "";
+    try {
+      const apiBase = process.env.REACT_APP_API_URL || "";
 
-    const res = await fetch(`${apiBase}/api/forms/nominate`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+      const res = await fetch(`${apiBase}/api/forms/nominate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      throw data; // 👈 backend message
-    }
+      if (!res.ok) {
+        throw data; // 👈 backend message
+      }
 
-    toast.success(
-      "Thank you for your nomination! Our team will review your submission."
-    );
+      toast.success(
+        "Thank you for your nomination! Our team will review your submission."
+      );
 
-    // reset form
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      designation: "",
-      country: "",
-      phoneNumber: "",
-      companyName: "",
-      companyWebsite: "",
-      nomineeType: "",
-      nomineeName: "",
-      nomineeWebsite: "",
-      nomineeLinkedIn: "",
-      nomineeRegion: "",
-      workDescription: "",
-      awardHistory: "",
-      announcements: "",
-      sponsorship: "",
-    });
-  } catch (err) {
-    console.error("Nominate submit error", err);
+      // reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        designation: "",
+        country: "",
+        phoneNumber: "",
+        companyName: "",
+        companyWebsite: "",
+        nomineeType: "",
+        nomineeName: "",
+        nomineeWebsite: "",
+        nomineeLinkedIn: "",
+        nomineeRegion: "",
+        workDescription: "",
+        awardHistory: "",
+        announcements: "",
+        sponsorship: "",
+      });
+    } catch (err) {
+      console.error("Nominate submit error", err);
 
-    toast.error(
-      err?.message ||
+      toast.error(
+        err?.message ||
         "This email has already been used to submit a nomination."
-    );
-  }
-};
+      );
+    }
+  };
 
   const regionOptions = [
     "Global",
@@ -117,7 +117,7 @@ const handleSubmit = async (e) => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
+                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>

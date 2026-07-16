@@ -27,7 +27,7 @@ function About() {
                     </p>
                     <p className="mb-2">
                       In 2026, the Summit returns{" "}
-                      <b>bigger and bolder in Dubai on 29 & 30 June</b>, uniting the
+                      <b>bigger and bolder in Dubai on 6 & 7 October, 2026</b>, uniting the
                       entire food value chain — from AgTech innovators and
                       farmers to investors, policymakers, NGOs, and
                       sustainability advocates — under one powerful vision:
@@ -77,7 +77,7 @@ function About() {
                             >
                               <h5 className="mb-1">WHEN</h5>
                               <small className="text-muted">
-                                29 & 30 June 2026
+                                6 & 7 October, 2026
                               </small>
                             </div>
                           </div>

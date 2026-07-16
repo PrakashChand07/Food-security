@@ -53,7 +53,7 @@ function Virtual() {
                 <div className="banner-event-info pb-4" style={{ fontWeight: "700" }}>
                   <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled gap-4">
                     <li className="pe-3 border-end border-1 border-dark border-opacity-25 mb-2 mb-sm-0">
-                      <i className="fa fa-calendar-o pe-1 pink"></i> June, 2026
+                      <i className="fa fa-calendar-o pe-1 pink"></i> October, 2026
                     </li>
                     <li className="mb-2 mb-sm-0">
                       <i className="fa fa-globe pe-1 pink"></i> Virtual Edition (Online)

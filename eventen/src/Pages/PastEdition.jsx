@@ -29,36 +29,36 @@ const PastEdition = () => {
   //   alert("Thank you! The Past Event Report will be sent to your email.");
   //   setShowPopup(false);
   // };
-const handlePopupSubmit = async (e) => {
-  e.preventDefault();
+  const handlePopupSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const apiBase = process.env.REACT_APP_API_URL || "";
-    const res = await fetch(`${apiBase}/api/forms/past-edition`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(popupData),
-    });
+    try {
+      const apiBase = process.env.REACT_APP_API_URL || "";
+      const res = await fetch(`${apiBase}/api/forms/past-edition`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(popupData),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      throw data; // 👈 backend message yahin se aayega
+      if (!res.ok) {
+        throw data; // 👈 backend message yahin se aayega
+      }
+
+      toast.success(
+        "Thank you! The Past Event Report will be sent to your email."
+      );
+
+      setPopupData({ name: "", phone: "", email: "" });
+      setShowPopup(false);
+    } catch (err) {
+      console.error("Past edition submit error", err);
+      toast.error(
+        err?.message || "This email has already requested the Past Event Report."
+      );
     }
-
-    toast.success(
-      "Thank you! The Past Event Report will be sent to your email."
-    );
-
-    setPopupData({ name: "", phone: "", email: "" });
-    setShowPopup(false);
-  } catch (err) {
-    console.error("Past edition submit error", err);
-    toast.error(
-      err?.message || "This email has already requested the Past Event Report."
-    );
-  }
-};
+  };
 
   const speakers = [
     {
@@ -133,37 +133,37 @@ const handlePopupSubmit = async (e) => {
   ];
 
   const awards = [
-  {
-    logo: "/assets/images/pastAwards/advanta.jpg",
-    title: "Smallholder Access to Improved Seeds Trailblazer",
-    subtitle: "Advanta Seeds",
-  },
-  {
-    logo: "/assets/images/pastAwards/Fasal.jpg",
-    title: "Field-Autonomy Irrigation & Advisory Architect",
-    subtitle: "Fasal",
-  },
-  {
-    logo: "/assets/images/pastAwards/foodSecure.jpg",
-    title: "Climate-Smart Infrastructure Financier",
-    subtitle: "Food Security Capital",
-  },
-  {
-    logo: "/assets/images/pastAwards/agrevolution.jpg",
-    title: "Holistic Farm-to-Market Systems Architect",
-    subtitle: "Agrevolution (DeHaat)",
-  },
-  {
-    logo: "/assets/images/pastAwards/fischer.jpg",
-    title: "Europe’s Largest Vertical Farm Innovator",
-    subtitle: "Fischer Farms",
-  },
-  {
-    logo: "/assets/images/pastAwards/innovate.jpg",
-    title: "Water-Based AgriTech Systems Architect",
-    subtitle: "Innovate Future AS",
-  },
-];
+    {
+      logo: "/assets/images/pastAwards/advanta.jpg",
+      title: "Smallholder Access to Improved Seeds Trailblazer",
+      subtitle: "Advanta Seeds",
+    },
+    {
+      logo: "/assets/images/pastAwards/Fasal.jpg",
+      title: "Field-Autonomy Irrigation & Advisory Architect",
+      subtitle: "Fasal",
+    },
+    {
+      logo: "/assets/images/pastAwards/foodSecure.jpg",
+      title: "Climate-Smart Infrastructure Financier",
+      subtitle: "Food Security Capital",
+    },
+    {
+      logo: "/assets/images/pastAwards/agrevolution.jpg",
+      title: "Holistic Farm-to-Market Systems Architect",
+      subtitle: "Agrevolution (DeHaat)",
+    },
+    {
+      logo: "/assets/images/pastAwards/fischer.jpg",
+      title: "Europe’s Largest Vertical Farm Innovator",
+      subtitle: "Fischer Farms",
+    },
+    {
+      logo: "/assets/images/pastAwards/innovate.jpg",
+      title: "Water-Based AgriTech Systems Architect",
+      subtitle: "Innovate Future AS",
+    },
+  ];
 
   return (
     <div>
@@ -252,7 +252,7 @@ const handlePopupSubmit = async (e) => {
                                 <h5 className="mb-1">WHEN</h5>
                                 <small className="text-muted">
                                   {" "}
-                                  29 & 30 June 2026
+                                  6 & 7 October, 2026
                                 </small>
                               </div>
                             </div>
@@ -399,77 +399,77 @@ const handlePopupSubmit = async (e) => {
 
 
           <section className="awards py-5">
-  <div className="container">
-    <div className="awards-inner">
-      <div className="awards-title text-center p-2">
-        <div className="row align-items-center">
-          <div className="col-lg-8 mx-auto">
-            <div className="title-content text-center mb-4">
-              <h2 className="mb-2">
-                Awards &amp; <span className="pink">Recognition</span>
-              </h2>
-              <p className="m-0">
-                Honoring Collaboration, Innovation &amp; Leadership
-              </p>
-              <p className="mt-2">
-                The Food Security SummitX Awards 2025 celebrated those driving
-                measurable progress in food safety, sustainability, and
-                AgriTech.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div className="container">
+              <div className="awards-inner">
+                <div className="awards-title text-center p-2">
+                  <div className="row align-items-center">
+                    <div className="col-lg-8 mx-auto">
+                      <div className="title-content text-center mb-4">
+                        <h2 className="mb-2">
+                          Awards &amp; <span className="pink">Recognition</span>
+                        </h2>
+                        <p className="m-0">
+                          Honoring Collaboration, Innovation &amp; Leadership
+                        </p>
+                        <p className="mt-2">
+                          The Food Security SummitX Awards 2025 celebrated those driving
+                          measurable progress in food safety, sustainability, and
+                          AgriTech.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-      {/* === Continuous Auto Slider === */}
-      <div className="awards-list text-center text-white">
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          allowTouchMove={false}
-          speed={5000} // smooth auto movement
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            576: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 },
-          }}
-        >
-          {awards.map((award, index) => (
-            <SwiperSlide key={index}>
-              <div className="award-box position-relative overflow-hidden text-white p-3 rounded">
-                <img
-                  className="award-logo w-75 mx-auto mb-3 d-block"
-                  src={award.logo}
-                  alt={award.title}
-                />
-                <h6 className="award-title text-white mb-1">
-                  {award.title}
-                </h6>
-                <p
-                  className="award-desc mb-0"
-                  style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.9rem" }}
-                >
-                  {award.subtitle}
-                </p>
+                {/* === Continuous Auto Slider === */}
+                <div className="awards-list text-center text-white">
+                  <Swiper
+                    modules={[Autoplay]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    allowTouchMove={false}
+                    speed={5000} // smooth auto movement
+                    autoplay={{
+                      delay: 0,
+                      disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                      576: { slidesPerView: 1 },
+                      768: { slidesPerView: 2 },
+                      992: { slidesPerView: 3 },
+                      1200: { slidesPerView: 4 },
+                    }}
+                  >
+                    {awards.map((award, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="award-box position-relative overflow-hidden text-white p-3 rounded">
+                          <img
+                            className="award-logo w-75 mx-auto mb-3 d-block"
+                            src={award.logo}
+                            alt={award.title}
+                          />
+                          <h6 className="award-title text-white mb-1">
+                            {award.title}
+                          </h6>
+                          <p
+                            className="award-desc mb-0"
+                            style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.9rem" }}
+                          >
+                            {award.subtitle}
+                          </p>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
-  </div>
-  <br />
-  <p className="mb-1 pink p-2 ml-2 text-center">
-    <i>(Each honoree reflected the SummitX vision — collaboration as the catalyst, innovation as the engine.)</i>
-  </p>
-</section>
+            </div>
+            <br />
+            <p className="mb-1 pink p-2 ml-2 text-center">
+              <i>(Each honoree reflected the SummitX vision — collaboration as the catalyst, innovation as the engine.)</i>
+            </p>
+          </section>
 
 
           <section className="speakers py-5">
@@ -700,17 +700,17 @@ const handlePopupSubmit = async (e) => {
                       className="card-img-top rounded-top-4"
                       alt="Excellence in Food Security – Enterprises"
                     />
-                     {/* Thin light line */}
-        <hr
-  style={{
-    border: "none",
-    height: "1px",
-    backgroundColor: "rgb(0, 0, 0)",
-    width: "100%",
-    margin: "0 auto",
-    marginTop: "4px",
-  }}
-/>
+                    {/* Thin light line */}
+                    <hr
+                      style={{
+                        border: "none",
+                        height: "1px",
+                        backgroundColor: "rgb(0, 0, 0)",
+                        width: "100%",
+                        margin: "0 auto",
+                        marginTop: "4px",
+                      }}
+                    />
 
                     <div className="card-body">
                       <h5 className="mb-2">KCell Biosciences</h5>
@@ -726,16 +726,16 @@ const handlePopupSubmit = async (e) => {
                       className="card-img-top rounded-top-4"
                       alt="Excellence in Food Security – Individuals"
                     />
-                     <hr
-  style={{
-    border: "none",
-    height: "1px",
-    backgroundColor: "rgb(0, 0, 0)",
-    width: "100%",
-    margin: "0 auto",
-    marginTop: "4px",
-  }}
-/>
+                    <hr
+                      style={{
+                        border: "none",
+                        height: "1px",
+                        backgroundColor: "rgb(0, 0, 0)",
+                        width: "100%",
+                        margin: "0 auto",
+                        marginTop: "4px",
+                      }}
+                    />
                     <div className="card-body">
                       <h5 className="mb-2">Fischer Farms Ltd</h5>
                       <p>Networking Lunch Sponsor</p>
@@ -750,7 +750,7 @@ const handlePopupSubmit = async (e) => {
                       className="card-img-top rounded-top-4"
                       alt="Excellence in Food Security – Organizations"
                     />
-                    
+
                     <div className="card-body">
                       <h5 className="mb-2">Iyris </h5>
                       <p>Table Tent Sponsor</p>
@@ -847,7 +847,7 @@ const handlePopupSubmit = async (e) => {
                       value={popupData.email}
                       onChange={handlePopupChange}
                       required
-                      style={{borderRadius:"25px"}}
+                      style={{ borderRadius: "25px" }}
                     />
                   </div>
                 </div>

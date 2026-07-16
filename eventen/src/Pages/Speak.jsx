@@ -87,7 +87,7 @@ const Speak = () => {
       console.error("Speak submit error", err);
       toast.error(
         err?.message ||
-          "This email has already been used to submit the Speak form."
+        "This email has already been used to submit the Speak form."
       );
     }
   };
@@ -109,7 +109,7 @@ const Speak = () => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
+                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
                 </p>
                 {/* <p className="mb-3">Join world leaders, innovators, and policymakers to shape the dialogue driving the future of food and agriculture.</p>
               <p className="mb-0">Your insights can spark partnerships, influence investment, and inspire global action for a food-secure world.</p> */}

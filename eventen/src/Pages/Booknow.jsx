@@ -27,49 +27,49 @@ const Booknow = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  try {
-    const apiBase = process.env.REACT_APP_API_URL || "";
-    const res = await fetch(`${apiBase}/api/forms/booking`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const apiBase = process.env.REACT_APP_API_URL || "";
+      const res = await fetch(`${apiBase}/api/forms/booking`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      throw data; // 👈 backend error message
-    }
+      if (!res.ok) {
+        throw data; // 👈 backend error message
+      }
 
-    toast.success("Thank you for registering! Our team will contact you soon.");
+      toast.success("Thank you for registering! Our team will contact you soon.");
 
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      designation: "",
-      companyName: "",
-      companyWebsite: "",
-      countryCode: "",
-      phoneNumber: "",
-      interest: "",
-      hearAboutUs: "",
-    });
-  } catch (err) {
-    console.error("Booking submit error", err);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        designation: "",
+        companyName: "",
+        companyWebsite: "",
+        countryCode: "",
+        phoneNumber: "",
+        interest: "",
+        hearAboutUs: "",
+      });
+    } catch (err) {
+      console.error("Booking submit error", err);
 
-    toast.error(
-      err?.message ||
+      toast.error(
+        err?.message ||
         "This email has already been used to register for the event."
-    );
-  } finally {
-    setLoading(false);
-  }
-};
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
 
 
   return (
@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
                   Register Now for <b>Food Security SummitX 2026</b> – Dubai
                 </h3>
                 <p className="mb-0">
-                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
+                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>
@@ -284,8 +284,8 @@ const handleSubmit = async (e) => {
                     <option value="Google">Google</option>
                     <option value="Direct">Direct</option>
                     <option value="Social Media">Social Media</option>
-                     <option value="De Bacci Capital">De Bacci Capital</option>
-                      <option value="Epicon Capital Club">Epicon Capital Club</option>
+                    <option value="De Bacci Capital">De Bacci Capital</option>
+                    <option value="Epicon Capital Club">Epicon Capital Club</option>
                     <option value="Others">Others</option>
                   </select>
                 </div>
@@ -302,7 +302,7 @@ const handleSubmit = async (e) => {
                   </label>
                 </div>
 
-                 <div className="d-grid mt-4">
+                <div className="d-grid mt-4">
                   <button
                     type="submit"
                     className="btn btn-dark btn-lg py-3 rounded-3"

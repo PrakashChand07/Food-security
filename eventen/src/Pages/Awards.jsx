@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 function Awards() {
   return (
-    
+
     <div>
       <Pagehelmet pageTitle="Honoring the Trailblazers Who Feed the Future" />
       <Breadcrumb
@@ -164,79 +164,79 @@ function Awards() {
       {/* -- Why Nominate Section end -- */}
 
       {/* -- Who Can Nominate Section start -- */}
-    <section className="who-can-nominate py-6">
-  <div className="container w-lg-75 text-center">
-    <h2 className="mb-3">Who Can Nominate?</h2>
-    <p>
-      The Food Security SummitX Awards are open to every sector
-      contributing to food security, innovation, and sustainable growth:
-    </p>
+      <section className="who-can-nominate py-6">
+        <div className="container w-lg-75 text-center">
+          <h2 className="mb-3">Who Can Nominate?</h2>
+          <p>
+            The Food Security SummitX Awards are open to every sector
+            contributing to food security, innovation, and sustainable growth:
+          </p>
 
-    <div className="position-relative">
-      <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
-        spaceBetween={20}
-        slidesPerView={3}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        loop={true}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          992: { slidesPerView: 3 },
-        }}
-        className="mySwiper"
-      >
-        {[
-          {
-            name: "Visionaries, researchers, policymakers, entrepreneurs, and changemakers.",
-            img: "assets/images/nominate/Individuals.jpg",
-          },
-          {
-            name: "Businesses pioneering technology, sustainability, and scalable impact.",
-            img: "assets/images/nominate/organizations.jpg",
-          },
-          {
-            name: "AgTech innovators, emerging disruptors, and climate-smart pioneers.",
-            img: "assets/images/nominate/startups.jpg",
-          },
-          {
-            name: "Social and environmental organizations championing inclusivity and resilience.",
-            img: "assets/images/nominate/ngos.jpg",
-          },
-          {
-            name: "Ministries and programs advancing policy, investment, and innovation.",
-            img: "assets/images/nominate/govtAgencies.jpg",
-          },
-          {
-            name: "Universities and think tanks advancing knowledge and applied science.",
-            img: "assets/images/nominate/academic.jpg",
-          },
-          {
-            name: "Grassroots movements empowering farmers and local ecosystems.",
-            img: "assets/images/nominate/initiative.jpg",
-          },
-        ].map((category, i) => (
-          <SwiperSlide key={i}>
-            <div className="card border-0 shadow-sm text-center h-100 p-3">
-              <img
-                src={category.img}
-                alt={category.name}
-                className="img-fluid rounded-3 mb-3"
-                style={{ height: "220px", objectFit: "cover" }}
-              />
-              <p>
-                <b>{category.name}</b>
-              </p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          <div className="position-relative">
+            <Swiper
+              modules={[Autoplay, Pagination, Navigation]}
+              spaceBetween={20}
+              slidesPerView={3}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              pagination={{ clickable: true }}
+              navigation={true}
+              loop={true}
+              breakpoints={{
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                992: { slidesPerView: 3 },
+              }}
+              className="mySwiper"
+            >
+              {[
+                {
+                  name: "Visionaries, researchers, policymakers, entrepreneurs, and changemakers.",
+                  img: "assets/images/nominate/Individuals.jpg",
+                },
+                {
+                  name: "Businesses pioneering technology, sustainability, and scalable impact.",
+                  img: "assets/images/nominate/organizations.jpg",
+                },
+                {
+                  name: "AgTech innovators, emerging disruptors, and climate-smart pioneers.",
+                  img: "assets/images/nominate/startups.jpg",
+                },
+                {
+                  name: "Social and environmental organizations championing inclusivity and resilience.",
+                  img: "assets/images/nominate/ngos.jpg",
+                },
+                {
+                  name: "Ministries and programs advancing policy, investment, and innovation.",
+                  img: "assets/images/nominate/govtAgencies.jpg",
+                },
+                {
+                  name: "Universities and think tanks advancing knowledge and applied science.",
+                  img: "assets/images/nominate/academic.jpg",
+                },
+                {
+                  name: "Grassroots movements empowering farmers and local ecosystems.",
+                  img: "assets/images/nominate/initiative.jpg",
+                },
+              ].map((category, i) => (
+                <SwiperSlide key={i}>
+                  <div className="card border-0 shadow-sm text-center h-100 p-3">
+                    <img
+                      src={category.img}
+                      alt={category.name}
+                      className="img-fluid rounded-3 mb-3"
+                      style={{ height: "220px", objectFit: "cover" }}
+                    />
+                    <p>
+                      <b>{category.name}</b>
+                    </p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
 
-      {/* Custom styles */}
-      <style>
-        {`
+            {/* Custom styles */}
+            <style>
+              {`
         .swiper-button-next,
         .swiper-button-prev {
           color: #13812a !important;
@@ -271,14 +271,14 @@ function Awards() {
           }
         }
       `}
-      </style>
-    </div>
+            </style>
+          </div>
 
-    <p className="mt-4">
-      (Both self-nominations and third-party nominations are welcome.)
-    </p>
-  </div>
-</section>
+          <p className="mt-4">
+            (Both self-nominations and third-party nominations are welcome.)
+          </p>
+        </div>
+      </section>
       {/* -- Who Can Nominate Section end -- */}
 
       {/* -- How to Nominate Section start -- */}
@@ -509,7 +509,7 @@ function Awards() {
                 >
                   <div className="accordion-body bg-lightgrey p-6">
                     Final awardees will be honored at the{" "}
-                    <strong>Grand Awards Ceremony on 29 & 30 June, 2026</strong>,
+                    <strong>Grand Awards Ceremony on6 & 7 October, 2026</strong>,
                     during
                     <strong> Food Security SummitX 2026 – Dubai.</strong>
                     <br />

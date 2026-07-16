@@ -239,7 +239,7 @@ const SummitAgenda = () => {
               {/* DAY 1 */}
               <div>
                 <h2 className="day-header">AGENDA DAY 1</h2>
-                <div className="day-subheader">29TH June 2026</div>
+                <div className="day-subheader">6th October 2026</div>
 
                 <table className="agenda-table">
                   <tbody>
@@ -401,7 +401,7 @@ const SummitAgenda = () => {
               {/* DAY 2 */}
               <div style={{ marginTop: "60px" }}>
                 <h2 className="day-header">AGENDA DAY 2</h2>
-                <div className="day-subheader">29TH June 2026 ( THURSDAY )</div>
+                <div className="day-subheader">6TH October 2026 ( THURSDAY )</div>
 
                 <table className="agenda-table">
                   <tbody>

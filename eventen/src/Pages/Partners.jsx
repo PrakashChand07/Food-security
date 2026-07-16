@@ -30,68 +30,68 @@ const Partners = () => {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  try {
-    const apiBase = process.env.REACT_APP_API_URL || "";
+    try {
+      const apiBase = process.env.REACT_APP_API_URL || "";
 
-    const payload = {
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      fullName: `${formData.firstName} ${formData.lastName}`,
-      email: formData.email,
-      designation: formData.designation,
-      companyName: formData.companyName,
-      companyWebsite: formData.companyWebsite,
-      countryCode: formData.countryCode,
-      phoneNumber: formData.phoneNumber,
-      linkedIn: formData.linkedIn,
-      partnershipType: formData.partnershipType,
-      hearAboutUs: formData.hearAboutUs,
-      submissionDate: new Date().toISOString(),
-    };
+      const payload = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        fullName: `${formData.firstName} ${formData.lastName}`,
+        email: formData.email,
+        designation: formData.designation,
+        companyName: formData.companyName,
+        companyWebsite: formData.companyWebsite,
+        countryCode: formData.countryCode,
+        phoneNumber: formData.phoneNumber,
+        linkedIn: formData.linkedIn,
+        partnershipType: formData.partnershipType,
+        hearAboutUs: formData.hearAboutUs,
+        submissionDate: new Date().toISOString(),
+      };
 
-    const res = await fetch(`${apiBase}/api/forms/partner`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+      const res = await fetch(`${apiBase}/api/forms/partner`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      throw data; // 👈 backend message yahin se
-    }
+      if (!res.ok) {
+        throw data; // 👈 backend message yahin se
+      }
 
-    toast.success(
-      "Thank you for your partnership interest! Our team will contact you soon."
-    );
+      toast.success(
+        "Thank you for your partnership interest! Our team will contact you soon."
+      );
 
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      designation: "",
-      companyName: "",
-      companyWebsite: "",
-      countryCode: "",
-      phoneNumber: "",
-      linkedIn: "",
-      partnershipType: "",
-      hearAboutUs: "",
-    });
-  } catch (err) {
-    console.error("Partnership submit error", err);
-    toast.error(
-      err?.message ||
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        designation: "",
+        companyName: "",
+        companyWebsite: "",
+        countryCode: "",
+        phoneNumber: "",
+        linkedIn: "",
+        partnershipType: "",
+        hearAboutUs: "",
+      });
+    } catch (err) {
+      console.error("Partnership submit error", err);
+      toast.error(
+        err?.message ||
         "This email has already been used to submit a partnership request."
-    );
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
 
   // Get selected country details
@@ -101,13 +101,13 @@ const handleSubmit = async (e) => {
 
   return (
     <div>
-            <Toaster position="top-right" reverseOrder={false} />
+      <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Partner With Purpose. Amplify the Movement."
         subtitle="Collaborate with Food Security SummitX 2026 – Dubai"
         bgImage="assets/images/apply/Partner.jpg"
       />
-      
+
       <section className="py-8">
         <div className="container">
           {/* Top row: two boxes side-by-side */}
@@ -118,7 +118,7 @@ const handleSubmit = async (e) => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>29 & 30 June 2026 | Dubai, UAE</strong>
+                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>
@@ -127,7 +127,7 @@ const handleSubmit = async (e) => {
               <div className="bg-white rounded p-4 box-shadow">
                 <h3>Why Submit This Form?</h3>
                 <p>By becoming a partner, you can:</p>
-          
+
                 <ul className="list-unstyled">
                   <li className="d-flex align-items-start mb-2">
                     <span className="me-2">•</span>
@@ -362,7 +362,7 @@ const handleSubmit = async (e) => {
                     )}
                   </button>
                 </div>
-                
+
                 <div className="mt-3 text-center">
                   <small className="text-muted">
                     * Required fields
