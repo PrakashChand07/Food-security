@@ -8,34 +8,9 @@ const errorHandler = require("./middleware/errorHandler");
 
 const app = express();
 
-const allowedOrigins = [
-  "https://new-theme-pied.vercel.app",
-  "https://foodsecuritysummitx.com",
-  "https://www.foodsecuritysummitx.com",
-  "https://web.foodsecuritysummitx.com",
-  "https://admin.foodsecuritysummitx.com",
-  "https://food-secure-admin.vercel.app",
-  "http://localhost:3000",
-  "http://localhost:5173",
-];
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    // Allow Postman / server-to-server
-    if (!origin) return callback(null, true);
-
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-
-    return callback(new Error(`CORS blocked origin: ${origin}`));
-  },
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-};
-app.use(cors(corsOptions));
-app.options("*", cors(corsOptions));
+// Allow all origins for public form submissions and dashboard access
+app.use(cors());
+app.options("*", cors());
 
 app.use(express.json());
 

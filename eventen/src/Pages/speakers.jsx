@@ -7,7 +7,8 @@ function Speakers() {
   const [speakers, setSpeakers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/speakers")
+    const apiBase = process.env.REACT_APP_API_URL || "";
+    fetch(`${apiBase}/api/speakers`)
       .then((res) => res.json())
       .then((data) => setSpeakers(data))
       .catch((err) => console.error(err));

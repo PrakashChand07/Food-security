@@ -60,7 +60,8 @@ const StartupPitch = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/forms/pitch", {
+      const apiBase = process.env.REACT_APP_API_URL || "";
+      const response = await fetch(`${apiBase}/api/forms/pitch`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

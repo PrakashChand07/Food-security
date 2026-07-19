@@ -190,7 +190,7 @@ const PastEdition = () => {
                         <span className="pink">Agriculture, Jordan</span>
                       </h2>
                       <p>
-                        It began as a spark in Dubai on September 17–18, 2025 —
+                        It began as a spark in 29th & 30th June, 2026 —
                         a spark that brought together visionaries, policymakers,
                         investors, and innovators under the theme:{" "}
                         <b>
@@ -225,7 +225,7 @@ const PastEdition = () => {
                               </div>
                               <div className="location-info">
                                 <h5 className="mb-1">WHERE</h5>
-                                <small>Dubai, UAE</small>
+                                <small>Online Platform</small>
                               </div>
                             </div>
                           </a>
@@ -251,8 +251,7 @@ const PastEdition = () => {
                               >
                                 <h5 className="mb-1">WHEN</h5>
                                 <small className="text-muted">
-                                  {" "}
-                                  6 & 7 October, 2026
+                                  6th & 7th October, 2026
                                 </small>
                               </div>
                             </div>

@@ -16,6 +16,7 @@ const userRoutes = require('./userRoutes');
 const pricingRoutes = require('./pricing');
 const paymentRoutes = require('./payment');
 const visitRoutes = require('./visitRoutes');
+const pitchRoutes = require('./pitchRoutes');
 
 router.use('/subscribe', subscribeRoutes);
 router.use('/contact', contactRoutes);
@@ -25,6 +26,7 @@ router.use('/partner', partnerRoutes);
 router.use('/exhibit-sponsor', exhibitSponsorRoutes);
 router.use('/past-edition', pastEditionRequestRoutes);
 router.use('/booking', bookingRoutes);
+router.use('/pitch', pitchRoutes);
 router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 router.use('/visit', visitRoutes);

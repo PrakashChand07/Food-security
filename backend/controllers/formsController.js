@@ -13,19 +13,11 @@ const checkDuplicateEmail = require("../utils/checkDuplicateEmail");
 
 exports.createContact = async (req, res, next) => {
   try {
-    /* 
-    // MongoDB duplicate check and save commented out
-    if (await checkDuplicateEmail(Contact, req.body.email)) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Request already submitted." });
-    }
     const doc = await Contact.create(req.body);
-    */
 
-    res.status(201).json({ success: true, message: "Contact request processed successfully." });
+    res.status(201).json({ success: true, message: "Contact request processed successfully.", data: doc });
 
-    sendFormEmail("contact", req.body).catch((e) =>
+    sendFormEmail("contact", doc).catch((e) =>
       console.error("sendFormEmail error", e)
     );
   } catch (err) {
@@ -167,17 +159,10 @@ exports.createPastEditionRequest = async (req, res, next) => {
 
 exports.createBooking = async (req, res, next) => {
   try {
-    /*
-    if (await checkDuplicateEmail(Booking, req.body.email)) {
-      return res
-        .status(400)
-        .json({ success: false, message: "Request already submitted." });
-    }
-
     const doc = await Booking.create(req.body);
-    */
-    res.status(201).json({ success: true, message: "Booking request processed successfully." });
-    sendFormEmail("booking", req.body).catch((e) =>
+    
+    res.status(201).json({ success: true, message: "Booking request processed successfully.", data: doc });
+    sendFormEmail("booking", doc).catch((e) =>
       console.error("sendFormEmail error", e)
     );
   } catch (err) {
