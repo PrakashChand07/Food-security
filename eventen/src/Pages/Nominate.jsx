@@ -105,7 +105,7 @@ const Nominate = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Celebrate Excellence. Honor Impact. Inspire the Future."
-        subtitle="Submit Your Nomination for Food Security SummitX 2026 – Dubai"
+        subtitle="Submit Your Nomination for Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/Nominate.jpg"
       />
       <section className="py-8">

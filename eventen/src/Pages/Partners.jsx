@@ -104,7 +104,7 @@ const Partners = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Partner With Purpose. Amplify the Movement."
-        subtitle="Collaborate with Food Security SummitX 2026 – Dubai"
+        subtitle="Collaborate with Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/Partner.jpg"
       />
 

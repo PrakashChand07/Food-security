@@ -170,7 +170,7 @@ const Speakers = () => {
       `}</style>
       <Breadcrumb
         title="Voices Shaping the Future of Food"
-        subtitle="Meet the global leaders, innovators, and changemakers behind SummitX 2026"
+        subtitle="Meet the global leaders, innovators, and changemakers behind SummitX 2027"
         bgImage="/assets/images/apply/Pitch.jpg"
       />
 
@@ -243,7 +243,7 @@ const Speakers = () => {
                   we invite you to be part of the SummitX speaker community.
                 </p>
                 <p className="mb-4">
-                  Apply to speak at the Food Security SummitX 2026 – Dubai and
+                  Apply to speak at the Food Security SummitX 2027 – Dubai and
                   share your voice with a global audience.
                 </p>
                 <Link

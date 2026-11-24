@@ -24,7 +24,7 @@ const WhyExhibit = () => {
       id: 4,
       image: "assets/images/whyExhibit/Voice_That_Sparks_Change.jpg",
       title: "Voice That Sparks Change",
-      p: "Take the stage at Food Security SummitX 2026 and join the voices shaping the global dialogue on food security and sustainable agriculture. Share insights, showcase innovation, and engage directly with policymakers, investors, and industry pioneers to position your brand as a thought leader in transformation."
+      p: "Take the stage at Food Security SummitX 2027 and join the voices shaping the global dialogue on food security and sustainable agriculture. Share insights, showcase innovation, and engage directly with policymakers, investors, and industry pioneers to position your brand as a thought leader in transformation."
     },
     {
       id: 5,
@@ -36,7 +36,7 @@ const WhyExhibit = () => {
       id: 6,
       image: "assets/images/whyExhibit/Where_Ideas_Build_the_Future_of_FoodX.jpg",
       title: "Where Ideas Build the Future of FoodX",
-      p: "Food Security SummitX 2026 – Dubai is where global leaders meet, partnerships are born, and ideas turn into lasting change. Put your brand at the heart of the next chapter in agriculture, food systems, and AgriTech innovation."
+      p: "Food Security SummitX 2027 – Dubai is where global leaders meet, partnerships are born, and ideas turn into lasting change. Put your brand at the heart of the next chapter in agriculture, food systems, and AgriTech innovation."
     }
   ];
   const Submits = [
@@ -122,7 +122,7 @@ const WhyExhibit = () => {
         .italic { font-style: italic; }
       `}</style>
          <Breadcrumb
-        title="Exhibit At Food Security SummitX Dubai 2026"
+        title="Exhibit At Food Security SummitX Dubai 2027"
         subtitle="Align your vision with global opportunity"
         bgImage="assets/images/whyExhibit/hero.jpg"
       />
@@ -149,7 +149,7 @@ const WhyExhibit = () => {
           </p>
 
           <p className="bold">
-            SummitX 2026 connects you to the world’s decision-makers:
+            SummitX 2027 connects you to the world’s decision-makers:
           </p>
 
           <ul>
@@ -304,7 +304,7 @@ const WhyExhibit = () => {
                   <p>
                     Forget passive branding — this is about business.
                     Engage directly with investors, ministries, and global enterprises ready to partner, procure, and scale innovation.
-                    SummitX 2026 is where market access becomes market leadership.
+                    SummitX 2027 is where market access becomes market leadership.
                   </p>
                 </div>
               </div>
@@ -344,12 +344,12 @@ const WhyExhibit = () => {
       <section>
         <div className="container">
           <h2 className="mb-4">
-            Ready to Shape the Future of <span className="green">Food in 2026?</span>
+            Ready to Shape the Future of <span className="green">Food in 2027?</span>
           </h2>
           <h3 className="mb-1">
             Talk to Our Team Today
           </h3>
-          <p>Let’s align your goals with global opportunity and position your brand at the center of innovation, investment, and impact at Food Security SummitX 2026.</p>
+          <p>Let’s align your goals with global opportunity and position your brand at the center of innovation, investment, and impact at Food Security SummitX 2027.</p>
         </div>
       </section>
       <div className="sepaker-list text-center text-white container">

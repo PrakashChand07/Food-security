@@ -39,7 +39,7 @@ function Virtual() {
               <div className="col-lg-8 text-center text-lg-start">
                 <div className="banner-title pb-3">
                   <h4 className="text-black pb-3" style={{ fontWeight: "700", letterSpacing: "1px" }}>
-                    FOOD SECURITY SUMMITX <span className="pink">VIRTUAL 2026</span>
+                    FOOD SECURITY SUMMITX <span className="pink">VIRTUAL 2027</span>
                   </h4>
                   <h1 className="text-black" style={{ fontWeight: "800", fontSize: "3rem" }}>
                     GCC AGRIFOOD & <span className="pink">FOOD SECURITY</span> ECOSYSTEM PLATFORM
@@ -53,7 +53,7 @@ function Virtual() {
                 <div className="banner-event-info pb-4" style={{ fontWeight: "700" }}>
                   <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled gap-4">
                     <li className="pe-3 border-end border-1 border-dark border-opacity-25 mb-2 mb-sm-0">
-                      <i className="fa fa-calendar-o pe-1 pink"></i> October, 2026
+                      <i className="fa fa-calendar-o pe-1 pink"></i> October, 2027
                     </li>
                     <li className="mb-2 mb-sm-0">
                       <i className="fa fa-globe pe-1 pink"></i> Virtual Edition (Online)

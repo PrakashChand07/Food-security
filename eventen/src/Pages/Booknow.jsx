@@ -88,7 +88,7 @@ const Booknow = () => {
             <div className="col-lg-6">
               <div className="bg-white rounded p-4 box-shadow h-100">
                 <h3 className="mb-3">
-                  Register Now for <b>Food Security SummitX 2026</b> – Dubai
+                  Register Now for <b>Food Security SummitX 2027</b> – Dubai
                 </h3>
                 <p className="mb-0">
                   <strong>27 April, 2027 | Dubai, UAE</strong>
@@ -105,7 +105,7 @@ const Booknow = () => {
                   under one roof.
                 </p>
                 <h5>
-                  At <b>Food Security SummitX 2026,</b> you’ll gain:
+                  At <b>Food Security SummitX 2027,</b> you’ll gain:
                 </h5>
                 <ul className="list-unstyled">
                   <li>• Reach decision-makers in AgTech & sustainability.</li>

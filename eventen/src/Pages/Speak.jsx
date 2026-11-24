@@ -97,7 +97,7 @@ const Speak = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Be the Voice That Ignites Change"
-        subtitle="Take the Stage at Food Security SummitX 2026 – Dubai"
+        subtitle="Take the Stage at Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/speak.jpg"
       />
       <section className="py-8 speak-page-margin">

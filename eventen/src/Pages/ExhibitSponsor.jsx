@@ -87,7 +87,7 @@ const ExhibitSponsor = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Be Seen. Be Remembered. Be the Brand That Feeds the Future"
-        subtitle="Exhibit or Sponsor at Food Security SummitX 2026 – Dubai"
+        subtitle="Exhibit or Sponsor at Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/Exhibit.jpg"
       />
       <section className="py-8">

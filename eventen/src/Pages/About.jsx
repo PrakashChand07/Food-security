@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <Breadcrumb
-        title="About Food Security SummitX 2026"
+        title="About Food Security SummitX 2027"
         subtitle="Securing the Future of Food, Together"
         bgImage="/assets/images/about/About.jpg"
       />
@@ -285,7 +285,7 @@ function About() {
             }}
           >
             <h3 className="text-center mb-4">
-              2026 Edition – <span className="pink">Expanding Horizons</span>
+              2027 Edition – <span className="pink">Expanding Horizons</span>
             </h3>
             <p className="text-center w-75 mx-auto">
               The Dubai edition introduces a larger, more inclusive experience
@@ -314,7 +314,7 @@ function About() {
             </ul>
             <p className="text-center mt-3">
               Every session, partnership, and dialogue at{" "}
-              <strong>Food Security SummitX 2026</strong> is designed to drive
+              <strong>Food Security SummitX 2027</strong> is designed to drive
               measurable outcomes — from policy reform and technology adoption
               to global investment acceleration.
             </p>

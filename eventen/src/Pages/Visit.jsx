@@ -72,7 +72,7 @@ const Visit = () => {
       <Toaster position="top-right" reverseOrder={false} />
       <Breadcrumb
         title="Experience the Future. Connect with the World."
-        subtitle="Visit Food Security SummitX 2026 – Dubai"
+        subtitle="Visit Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/speak.jpg"
       />
 

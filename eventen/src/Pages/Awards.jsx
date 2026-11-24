@@ -20,13 +20,13 @@ function Awards() {
 
       <section className="awards-intro py-6">
         <div className="container text-center w-lg-75">
-          <h2 className="mb-3">Food Security SummitX 2026 Awards</h2>
+          <h2 className="mb-3">Food Security SummitX 2027 Awards</h2>
           <p className="mb-1 pink">
             Recognizing Those Who Redefine the Future of Food
           </p>
           <br />
           <p>
-            At <strong>Food Security SummitX 2026 – Dubai</strong>, recognition
+            At <strong>Food Security SummitX 2027 – Dubai</strong>, recognition
             is not given — it’s earned. The SummitX Awards celebrate those whose
             work ignites progress, inspires transformation, and brings the world
             closer to sustainable food security. This is where leadership meets
@@ -293,7 +293,7 @@ function Awards() {
               HOW THE <span className="pink">NOMINATION PROCESS</span> WORKS
             </h2>
             <p className="text-white">
-              Every recognition at <b>Food Security SummitX 2026</b> begins with
+              Every recognition at <b>Food Security SummitX 2027</b> begins with
               a story — your story. Here’s how your journey from nomination to
               global recognition unfolds.
             </p>
@@ -511,7 +511,7 @@ function Awards() {
                     Final awardees will be honored at the{" "}
                     <strong>Grand Awards Ceremony on27 April, 2027</strong>,
                     during
-                    <strong> Food Security SummitX 2026 – Dubai.</strong>
+                    <strong> Food Security SummitX 2027 – Dubai.</strong>
                     <br />
                     <br />
                     The celebration will take place before an audience of{" "}
@@ -638,7 +638,7 @@ function Awards() {
           <h5 className="text-white mb-1">JOIN THE CIRCLE OF IMPACT</h5>
           <h1 className="text-white mb-2">
             Be Recognized at{" "}
-            <span className="pink">Food Security SummitX 2026</span>
+            <span className="pink">Food Security SummitX 2027</span>
           </h1>
           <p>
             Submit your nomination today and let your impact inspire the world.

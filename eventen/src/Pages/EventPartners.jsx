@@ -117,7 +117,7 @@ const EventPartners = () => {
           <h2>Event Partners & Participating Organizations</h2>
           <p>
             Exhibitors, sponsors, media partners, and collaborating organizations
-            supporting Food Security SummitX 2026.
+            supporting Food Security SummitX 2027.
           </p>
 
           <div className="logo-grid">

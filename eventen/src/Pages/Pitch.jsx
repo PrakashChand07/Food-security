@@ -115,7 +115,7 @@ const StartupPitch = () => {
       {/* ===== BREADCRUMB (SAME COMPONENT) ===== */}
       <Breadcrumb
         title="Pitch the Future. Inspire Investment."
-        subtitle="Startup Pitch Ceremony | Food Security SummitX 2026 – Dubai"
+        subtitle="Startup Pitch Ceremony | Food Security SummitX 2027 – Dubai"
         bgImage="assets/images/apply/Pitch.jpg"
       />
 

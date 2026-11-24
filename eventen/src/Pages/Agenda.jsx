@@ -174,7 +174,7 @@ const SummitAgenda = () => {
             {/* INTRO */}
             <section className="page container">
               <h2>
-                What to Expect at <span className="green">Food Security SummitX 2026</span>
+                What to Expect at <span className="green">Food Security SummitX 2027</span>
               </h2>
               <p>
                 The SummitX agenda is designed to move beyond discussion and into

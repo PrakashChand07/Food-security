@@ -123,7 +123,7 @@ function Home() {
                     style={{ fontWeight: "700" }}
                   >
                     <p className="pb-4 m-0">
-                      In 2026, Dubai becomes the epicenter of a global movement
+                      In 2027, Dubai becomes the epicenter of a global movement
                       where leaders, innovators, and nations unite to secure the
                       world’s food future.
                     </p>
@@ -179,7 +179,7 @@ function Home() {
               <div className="col-lg-6">
                 <div className="overview-left text-center text-lg-start">
                   <div className="overview-title pb-4">
-                    <p className="mb-1 pink">Food Security SummitX 2026 </p>
+                    <p className="mb-1 pink">Food Security SummitX 2027 </p>
                     <h2 className="mb-2">
                       Igniting Change in Global{" "}
                       <span className="pink">Food Security</span>
@@ -189,7 +189,7 @@ function Home() {
                       from water scarcity to climate change ,the need for
                       innovation and collaborative solutions has never been more
                       urgent. Building on the momentum of the inaugural 2025
-                      summit, <b>Food Security SummitX 2026 (2nd Edition)</b>{" "}
+                      summit, <b>Food Security SummitX 2027 (2nd Edition)</b>{" "}
                       returns as a catalyst for actionable change.
                       <br /> <br /> This premier conference brings together
                       startups, investors, policymakers, and industry leaders to
@@ -584,7 +584,7 @@ function Home() {
               <p>
                 Be part of the global movement shaping food security. Reserve
                 your Early Bird pass today and join leaders redefining the
-                future in Dubai 2026.
+                future in Dubai 2027.
               </p>
               <div className="ticket-button">
                 <Link to="/Booknow" className="btn">
@@ -914,7 +914,7 @@ function Home() {
                       What started as a spark in our last edition now fuels a
                       global movement. These moments capture the passion,
                       purpose, and connections that lit the fire for
-                      <b> Food Security SummitX 2026</b>.
+                      <b> Food Security SummitX 2027</b>.
                     </p>
                   </div>
                 </div>
@@ -966,7 +966,7 @@ function Home() {
                     <p className="text-white">
                       Find quick answers to everything you need to know, from
                       registration details and passes to participation options
-                      and event logistics for<b> Food Security SummitX 2026</b>{" "}
+                      and event logistics for<b> Food Security SummitX 2027</b>{" "}
                       in Dubai.
                     </p>
                   </div>
@@ -1002,7 +1002,7 @@ function Home() {
                             Food Security SummitX is a global platform that
                             unites innovators, investors, ministries, and
                             agribusiness leaders to accelerate solutions for a
-                            sustainable and food-secure future. The 2026 edition
+                            sustainable and food-secure future. The 2027 edition
                             will be held on{" "}
                             <strong>27 April, 2027 in Dubai, UAE</strong>, under the
                             theme <em>“Food for All.”</em>
@@ -1235,7 +1235,7 @@ function Home() {
             </h2>
             <p className="mb-0">
               Dubai awaits — a city where ideas, innovation, and collaboration
-              converge. Join us at<b> Food Security SummitX 2026</b> and step
+              converge. Join us at<b> Food Security SummitX 2027</b> and step
               into the movement shaping tomorrow.
             </p>
           </div>
