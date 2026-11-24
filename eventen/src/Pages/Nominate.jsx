@@ -117,7 +117,7 @@ const Nominate = () => {
                   Where Feeding the Future Meets Building the Business
                 </h3>
                 <p className="mb-0">
-                  <strong>6 & 7 October, 2026 2026 | Dubai, UAE</strong>
+                  <strong>27 April, 2027 | Dubai, UAE</strong>
                 </p>
               </div>
             </div>

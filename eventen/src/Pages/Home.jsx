@@ -111,7 +111,7 @@ function Home() {
                   >
                     <ul className="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                       <li className="pe-2 border-end border-1 border-lightgrey">
-                        <i className="fa  fa-calendar-o pe-1"></i>6 & 7 October, 2026
+                        <i className="fa  fa-calendar-o pe-1"></i>27 April, 2027
                       </li>
                       <li className="ps-2">
                         <i className="fa  fa-map-marker pe-1"></i> Dubai
@@ -254,7 +254,7 @@ function Home() {
                               <h5 className="mb-1">WHEN</h5>
                               <small className="text-muted">
                                 {" "}
-                                6 & 7 October, 2026
+                                27 April, 2027
                               </small>
                             </div>
                           </div>
@@ -1004,7 +1004,7 @@ function Home() {
                             agribusiness leaders to accelerate solutions for a
                             sustainable and food-secure future. The 2026 edition
                             will be held on{" "}
-                            <strong>6 & 7 October, 2026 in Dubai, UAE</strong>, under the
+                            <strong>27 April, 2027 in Dubai, UAE</strong>, under the
                             theme <em>“Food for All.”</em>
                           </div>
                         </div>

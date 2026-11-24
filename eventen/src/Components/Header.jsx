@@ -143,7 +143,7 @@ const Header = () => {
           }}
         >
           {Array(20)
-            .fill("Virtual Edition - October, 2026 | Gateway to Middle East Food & Agri Markets")
+            .fill("This April, the Global Agri-Food Industry Meets the Ambitions of the Arab World in Dubai.")
             .map((text, i) => (
               <span key={i} style={{ marginRight: "40px" }}>
                 {text} •

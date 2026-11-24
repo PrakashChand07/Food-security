@@ -509,7 +509,7 @@ function Awards() {
                 >
                   <div className="accordion-body bg-lightgrey p-6">
                     Final awardees will be honored at the{" "}
-                    <strong>Grand Awards Ceremony on6 & 7 October, 2026</strong>,
+                    <strong>Grand Awards Ceremony on27 April, 2027</strong>,
                     during
                     <strong> Food Security SummitX 2026 – Dubai.</strong>
                     <br />
